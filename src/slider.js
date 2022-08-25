@@ -15,7 +15,7 @@ const maxSlide = slides.length;
 
 const goToSlide = function (slide = 1) {
   slides.forEach((s, i) => {
-    s.style.transform = `translatex(${100 * (i - slide)}%)`;
+    s.style.transform = `translatex(${100 * (0 - slide)}%)`;
   });
 };
 
@@ -40,7 +40,8 @@ const prevSlide = function () {
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
-// goToSlide(2);
+
+goToSlide(2);
 
 const init = function () {
   goToSlide(0);
