@@ -29,21 +29,19 @@
   font-style: normal;
   font-weight: 700;
 
+  font-size: 28px;
+  line-height: 33px;
   margin: 0%;
 
   padding-bottom: 28px;
 
-  @media screen and (min-width: 480px) {
-    font-size: 28px;
-    line-height: 33px;
-  }
-
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     font-size: 42px;
     line-height: 120%;
     padding-bottom: 44px;
   }
-  @media screen and (min-width: 1280) {
+
+  @media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: 120%;
     padding-bottom: 28px;
