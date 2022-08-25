@@ -95,10 +95,12 @@ li {
   }
 }
 
-.hero__about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media screen and (min-width: 1280px) {
+  .hero__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .hero__title {
@@ -132,20 +134,20 @@ li {
   font-size: 14px;
   line-height: 150%;
   margin: 0%;
-  margin-bottom: 28px;
+  padding-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
   .hero__about-text {
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__about-text {
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -161,6 +163,16 @@ li {
 }
 .hero__button:hover, .hero__button:focus {
   background: #b5ff00;
+}
+@media screen and (max-width: 767px) {
+  .hero__button {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero__button {
+    margin-bottom: 73px;
+  }
 }
 
 .hero__circle {
