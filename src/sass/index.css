@@ -50,16 +50,29 @@ li {
 }
 
 .container__hero {
-  max-width: 1280px;
-  height: 608px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
-  gap: 152px;
+}
+@media screen and (min-width: 768px) {
+  .container__hero {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container__hero {
+    gap: 152px;
+    max-width: 1280px;
+    height: 608px;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .hero__about {
@@ -67,33 +80,63 @@ li {
   flex-direction: column;
   justify-content: center;
 }
-
 .hero__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 120%;
   margin: 0%;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 320px) {
+  .hero__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 42px;
+    line-height: 120%;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 28px;
+  }
 }
 
 .hero__about-text {
   font-family: "Roboto";
   font-style: normal;
-  width: 502px;
-  height: 69px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  width: 266px;
+  height: 105px;
   margin: 0%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+@media screen and (min-width: 768px) {
+  .hero__about-text {
+    width: 336px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__about-text {
+    font-size: 16px;
+    width: 502px;
+    height: 69px;
+  }
 }
 
 .hero__button {
   width: 100px;
   height: 32px;
   border: none;
-  margin-top: 40px;
+  margin-top: 28px;
   font-weight: 400;
   font-size: 13.6667px;
   line-height: 150%;
@@ -103,18 +146,37 @@ li {
 .hero__button:hover, .hero__button:focus {
   background: #b5ff00;
 }
+@media screen and (min-width: 768px) {
+  .hero__button {
+    margin-top: 40px;
+  }
+}
 
 .hero__circle {
   position: relative;
-  margin: 14px 14px 14px 0;
-  min-width: 580px;
-  min-height: 580px;
+  display: none;
   background: #fefefe;
   border: 26px solid #ffe550;
   border-radius: 50%;
 }
+@media screen and (min-width: 768px) {
+  .hero__circle {
+    display: inline;
+    width: 320px;
+    height: 320px;
+    margin: 149px 16px 0 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__circle {
+    min-width: 580px;
+    min-height: 580px;
+    margin: 14px 14px 14px 0;
+  }
+}
 
 .slider__container {
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
 }
