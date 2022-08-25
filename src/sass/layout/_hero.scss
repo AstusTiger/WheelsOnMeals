@@ -78,27 +78,21 @@
   border-radius: 50%;
 }
 
-.slider__items {
+.slider__container {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slider {
   display: flex;
   padding: 0;
-  counter-reset: slide;
-  // overflow: hidden;
 }
 
-.slider__item {
+.slide {
   display: inline-block;
   position: relative;
-  counter-increment: slide;
   list-style: none;
   transition-duration: 0.5s;
-}
-
-.slider__item::after {
-  content: counter(slide);
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #fff;
 }
 
 .slider__button--left,
