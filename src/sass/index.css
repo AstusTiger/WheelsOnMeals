@@ -174,6 +174,11 @@ li {
     display: none;
   }
 }
+@media screen and (max-width: 1279px) {
+  .hero__circle {
+    margin-top: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__circle {
     width: 320px;

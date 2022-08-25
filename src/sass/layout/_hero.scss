@@ -106,10 +106,9 @@
     display: none;
   }
 
-  // @media screen and (max-width: 1279px) {
-  //   right: 0;
-  //   bottom: 0;
-  // }
+  @media screen and (max-width: 1279px) {
+    margin-top: auto;
+  }
 
   @media screen and (min-width: 768px) {
     width: 320px;
