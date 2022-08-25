@@ -38,6 +38,10 @@
 
   padding-bottom: 28px;
 
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 537px;
     font-size: 42px;

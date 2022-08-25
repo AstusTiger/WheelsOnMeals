@@ -113,6 +113,11 @@ li {
   margin: 0%;
   padding-bottom: 28px;
 }
+@media screen and (max-width: 767px) {
+  .hero__title {
+    max-width: 280px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 537px;
