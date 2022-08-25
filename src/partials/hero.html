@@ -1,1 +1,72 @@
-<p>hero</p>
+<section class="hero">
+  <div class="container container__hero">
+    <div class="hero__about">
+      <h1 class="hero__title">
+        Enjoy Your Favorite<br />
+        Food From Anywhere
+      </h1>
+      <p class="hero__about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button class="hero__button" type="button">Order Now</button>
+    </div>
+    <div class="hero__circle">
+      <div class="slider__container">
+        <ul class="slider">
+          <li class="slide">
+            <img
+              class="slider__img"
+              srcset="
+        /src/images/hero/salat1-tab.png 292w;
+        /src/images/hero/salt1-des.png 528w;
+        /src/images/hero/salat1-tab@2x.png 584;
+        /src/images/hero/salt1-des@2x.png 1056w"
+              src="/src/images/hero/salt1-des.png"
+              alt="salat1"
+              width="528"
+            />
+          </li>
+          <li class="slide">
+            <img
+              class="slider__img"
+              srcset="
+        /src/images/hero/salat2-tab.png 292w;
+        /src/images/hero/salt2-des.png 528w;
+        /src/images/hero/salat2-tab@2x.png 584;
+        /src/images/hero/salt2-des@2x.png 1056w"
+              src="/src/images/hero/salt2-des.png"
+              alt="salat1"
+              width="528"
+            />
+          </li>
+          <li class="slide">
+            <img
+              class="slider__img"
+              srcset="
+        /src/images/hero/salat3-tab.png 292w;
+        /src/images/hero/salt3-des.png 528w;
+        /src/images/hero/salat3-tab@2x.png 584;
+        /src/images/hero/salt3-des@2x.png 1056w"
+              src="/src/images/hero/salt3-des.png"
+              alt="salat1"
+              width="528"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <button class="slider__button--left prev" type="button">
+        <svg class="slider__button" width="16" height="29">
+          <use href="/src/images/hero/slider-btn.svg#btn-left"></use>
+        </svg>
+      </button>
+      <button class="slider__button--right next" type="button">
+        <svg class="slider__button" width="16" height="29">
+          <use href="/src/images/hero/slider-btn.svg#btn-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
