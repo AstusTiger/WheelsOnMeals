@@ -195,9 +195,9 @@ li {
   .hero__circle {
     margin-top: auto;
     position: absolute;
-    right: 30px;
+    right: 45px;
     bottom: 0;
-    margin: 0 0 14px 0;
+    margin: 0 0 14px 40px;
   }
 }
 @media screen and (min-width: 768px) {
