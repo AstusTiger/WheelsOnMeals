@@ -206,6 +206,15 @@ li {
   transition-duration: 0.5s;
 }
 
+.slider__img {
+  width: 292px;
+}
+@media screen and (min-width: 1280px) {
+  .slider__img {
+    min-width: 528px;
+  }
+}
+
 .slider__button--left,
 .slider__button--right {
   display: flex;
