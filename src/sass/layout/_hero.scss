@@ -9,20 +9,17 @@
 }
 
 .container__hero {
-  display: flex;
-  justify-content: center;
   gap: 40px;
+  position: relative;
 
   @media screen and (min-width: 1280px) {
     gap: 152px;
+    display: flex;
+    justify-content: center;
   }
 }
 
 .hero__about {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
@@ -42,12 +39,14 @@
   padding-bottom: 28px;
 
   @media screen and (min-width: 768px) {
+    width: 537px;
     font-size: 42px;
     line-height: 120%;
     padding-bottom: 44px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 502px;
     font-size: 48px;
     line-height: 120%;
     padding-bottom: 28px;
@@ -57,8 +56,6 @@
 .hero__about-text {
   font-family: 'Roboto';
   font-style: normal;
-  // width: 502px;
-  // height: 69px;
 
   font-weight: 400;
   font-size: 14px;
@@ -71,11 +68,13 @@
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 40px;
+    width: 336px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 40px;
+    width: 502px;
   }
 }
 
@@ -121,6 +120,10 @@
 
   @media screen and (max-width: 1279px) {
     margin-top: auto;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    margin: 0 0 14px 0;
   }
 
   @media screen and (min-width: 768px) {

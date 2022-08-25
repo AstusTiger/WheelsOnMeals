@@ -85,13 +85,14 @@ li {
 }
 
 .container__hero {
-  display: flex;
-  justify-content: center;
   gap: 40px;
+  position: relative;
 }
 @media screen and (min-width: 1280px) {
   .container__hero {
     gap: 152px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -114,6 +115,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
+    width: 537px;
     font-size: 42px;
     line-height: 120%;
     padding-bottom: 44px;
@@ -121,6 +123,7 @@ li {
 }
 @media screen and (min-width: 1280px) {
   .hero__title {
+    width: 502px;
     font-size: 48px;
     line-height: 120%;
     padding-bottom: 28px;
@@ -141,13 +144,15 @@ li {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 40px;
+    width: 336px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .hero__about-text {
     font-size: 16px;
     line-height: 150%;
     padding-bottom: 40px;
+    width: 502px;
   }
 }
 
@@ -189,6 +194,10 @@ li {
 @media screen and (max-width: 1279px) {
   .hero__circle {
     margin-top: auto;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    margin: 0 0 14px 0;
   }
 }
 @media screen and (min-width: 768px) {
