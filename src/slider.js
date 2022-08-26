@@ -1,3 +1,4 @@
+// Pavlo Radchenko
 const slider = document.querySelector('.slider');
 
 const slides = slider.querySelectorAll('.slide');
