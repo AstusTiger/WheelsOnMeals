@@ -5,6 +5,9 @@
         (min-resolution: 2dppx) {
                 background-image: url(/src/images/feedback/backgr@2x_mob.png);
             }
+    background-repeat: no-repeat;
+background-position: 50% 0;
+
     @media screen and (min-width: 768px) {
         background-image: url(/src/images/feedback/backgr@1x_tab.png);
         
@@ -27,7 +30,7 @@
 
 .customers-say {
     padding-top: 60px;
-    padding-bottom: 134px;
+    padding-bottom: 21px;
 
 
     &__feedback-item:not(:last-child){
@@ -42,6 +45,8 @@
         font-weight: 700;
         font-size: 28px;
         line-height: 1.18;
+
+        width: 280px;
 
         color: var(--black-color);
     }
@@ -121,6 +126,8 @@
 
 
     @media screen and(min-width: 768px) {
+        padding-bottom: 46px;
+
         &__feedback-list{
             display: flex;
             gap: 32px;
@@ -128,6 +135,7 @@
 
         &__title {
             margin-bottom: 48px;
+            width: 100%;
 
             font-size: 42px;
             line-height: 1.17;
@@ -141,6 +149,7 @@
 
     @media screen and(min-width: 1280px) {
         padding-top: 100px;
+        padding-bottom: 134px;
 
         &__feedback-list {
                 gap: 139px;
