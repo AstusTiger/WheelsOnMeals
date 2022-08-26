@@ -1,0 +1,24 @@
+.special-offer__button-order-big {
+    height: 40px;
+    width: 130px;
+    @media screen and (min-width:1280px) {
+        width: 106px;  
+    }
+  
+    border: 2px solid var(--dark-green-color);
+    border-radius: 30px;
+    
+    background-color: var(--white-color);
+    
+  
+    margin-top: 28px;
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+  
+    &:hover,
+    &:focus {
+      border-color: var(--super-dark-green);
+    }
+  }

@@ -1,0 +1,42 @@
+.container__special-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    // width: 480px;
+    // background-image: url('../images/special-offer/offer_bg_mobile_x1.png');
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    // background-size: 100%;
+    // @media screen and (min-width:768px) {
+    //     background-image: url('../images/special-offer/offer_bg_tablet_x1.png');
+    //     background-repeat: no-repeat;
+    //     background-position: bottom;
+    //     background-size: 100%;
+    // }
+    // @media screen and (min-width:1280px) {
+    //     background-image: url('../images/special-offer/offer_bg_desktop_x1.png');
+    //     background-repeat: no-repeat;
+    //     background-position: bottom;
+    //     background-size: 100%;
+    // }
+}
+
+// .apple-for-mobile {
+//     @media screen and (max-width:767px) {
+//         display: none;
+//     }
+    
+// }
+
+// .apple-for-desktop {
+//     @media screen and (max-width:1279px) {
+//         display: none;
+//     }
+// }
+
+// .special-offer__icon {
+//     fill: var(--dark-green-color);
+// }
+
