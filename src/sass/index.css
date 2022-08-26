@@ -262,7 +262,7 @@ li {
 .slider__button--left:hover, .slider__button--left:focus,
 .slider__button--right:hover,
 .slider__button--right:focus {
-  fill: #7eb101;
+  fill: var(--dark-green-color);
 }
 @media screen and (min-width: 768px) {
   .slider__button--left,
