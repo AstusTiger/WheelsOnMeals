@@ -1,0 +1,92 @@
+.footer-overlay{
+    width: 100%;
+    height: 100%;
+  background: url(../images/orange-320@1.png) top right no-repeat, 
+              url(../images/apple-320@1.png) top 132px left no-repeat,
+              url(../images/fruits-320@1.png) bottom center no-repeat;
+     
+     
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     background: url(../images/orange-320@2.png) top right no-repeat cover, 
+                 url(../images/apple-320@2.png) top 132px left no-repeat cover,
+                 url(../images/fruits-320@2.png) no-repeat cover bottom;
+    }
+   }
+   .footer {
+     padding: 60px 0;
+  }
+  
+   .footer-navigation {
+      display: flex;
+   }
+  
+   .navigation {
+      margin-left: 81px;
+      @media screen and (min-width: 768px) {
+          margin-left: 114px;
+          }
+   }
+   .nav__list {
+      @media screen and (min-width: 768px) {
+      display: flex;
+      }
+   }
+  
+   .subscribe {
+  padding-top: 40px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+   }
+   
+   .subscribe-form__policy {
+     margin-top: 20px;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 1.2;
+   }
+  
+   .subscribe-form__link {
+  text-decoration-line: underline;
+  color: var(--dark-green-color);
+  
+   }
+  
+   .therms {
+     padding-top: 60px;
+     @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      }
+  }
+  
+   .footer-therms {
+       display: flex;
+      justify-content: space-between;
+   }
+   
+   .footer-therms__link {
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 1.2;
+   text-decoration-line: underline;
+   color: var(--dark-green-color);
+   }
+  
+  .footer-therms__text {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--black-color);
+  @media screen and (min-width: 768px) {
+      margin-top: 0;
+      
+      }
+  }
+   
