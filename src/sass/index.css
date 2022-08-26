@@ -106,8 +106,6 @@ li {
 }
 
 .hero__title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
@@ -137,8 +135,6 @@ li {
 }
 
 .hero__about-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
