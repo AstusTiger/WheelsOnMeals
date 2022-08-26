@@ -260,6 +260,10 @@ li {
 .slider__button--right:focus {
   fill: var(--dark-green-color);
 }
+.slider__button--left:active,
+.slider__button--right:active {
+  fill: var(--black-color);
+}
 @media screen and (min-width: 768px) {
   .slider__button--left,
 .slider__button--right {
