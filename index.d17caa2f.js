@@ -1,0 +1,2 @@
+const e=document.querySelector(".slider").querySelectorAll(".slide"),t=document.querySelector(".prev"),n=document.querySelector(".next");let c=0;const r=e.length,l=function(t=1){e.forEach(((e,n)=>{e.style.transform=`translatex(${100*(0-t)}%)`}))};n.addEventListener("click",(function(){c===r-1?c=0:c++,l(c)})),t.addEventListener("click",(function(){0===c?c=r-1:c--,l(c)})),l(2);l(0);
+//# sourceMappingURL=index.d17caa2f.js.map

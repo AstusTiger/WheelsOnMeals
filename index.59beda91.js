@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".slider").querySelectorAll(".slide"),t=document.querySelector(".prev"),n=document.querySelector(".next"),c=0,r=e.length,o=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1;e.forEach((function(e,n){e.style.transform="translatex(".concat(100*(0-t),"%)")}))};n.addEventListener("click",(function(){c===r-1?c=0:c++,o(c)})),t.addEventListener("click",(function(){0===c?c=r-1:c--,o(c)})),o(2);o(0)}();
+//# sourceMappingURL=index.59beda91.js.map
