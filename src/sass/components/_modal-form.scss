@@ -1,0 +1,156 @@
+.register-form {
+    text-align: center;
+    &__title {
+        display: block;
+        margin-bottom: 12px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(30 / 20);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+    &__group {
+        margin-bottom: 10px;
+    }
+    &__wrap {
+        position: relative;
+        display: block;
+        margin-bottom: 12px;
+    }
+    &__wrap:last-child {
+        margin-bottom: 0;
+    }
+    &__label {
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        /* identical to box height */
+        letter-spacing: 0.01em;
+        color: #757575;
+    }
+    &__input,
+    &__message {
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 10px;
+        padding-left: 50px;
+        border-radius: 4px;
+        outline: transparent;
+    }
+    &__message {
+        padding-top: 12px;
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+        height: 120px;
+        resize: none;
+        transition-property: baborder-color;
+        transition: border var(--anim);
+    }
+    &__item {
+        position: relative;
+        transition-property: border-color;
+    }
+    &__item:hover &__input,
+    &__item:focus-within &__input {
+        border-color: var(--accent-cl);
+        transition: border-color var(--anim);
+        cursor: pointer;
+    }
+    &__item:hover &__icon,
+    &__item:focus-within &__icon {
+        fill: var(--accent-cl);
+        transition: fill var(--anim);
+        cursor: pointer;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        width: 18px;
+        height: 18px;
+        transform: translateY(-50%);
+        transition: fill var(--anim);
+    }
+    &__message:focus,
+    &__message:hover {
+        border: 1px solid var(--accent-cl);
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__agreement {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    .register-icon-uncheck,
+    .register-icon-check {
+        width: 16px;
+        height: 15px;
+    }
+    .register-checkbox:checked+.register-icon .register-icon-uncheck {
+        opacity: 0;
+        transition: opacity var(--anim);
+    }
+    .register-icon-check {
+        opacity: 0;
+        fill: var(--accent-cl);
+        transition-property: all;
+        transition: opacity var(--anim);
+        transition: fill var(--anim);
+    }
+    .register-icon-check:focus,
+    .register-icon-check:hover {
+        fill: var(--accent-cl);
+        cursor: pointer;
+    }
+    .register-checkbox:checked+.register-icon .register-icon-check {
+        opacity: 1;
+    }
+    &__agreement-text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.03em;
+        color: var(--main-txt-cl);
+        user-select: none;
+        text-underline-position: under;
+    }
+    &__agreement-link {
+        color: var(--accent-cl);
+    }
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        padding: 10px 56px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        background-color: var(--accent-cl);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        transition-property: background-color;
+        transition: background-color var(--anim);
+        &:focus,
+        &:hover {
+            background-color: var(--btn-cl);
+            cursor: pointer;
+        }
+    }
+}
