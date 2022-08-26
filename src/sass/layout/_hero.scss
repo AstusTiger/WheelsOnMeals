@@ -1,81 +1,146 @@
 // hero Pavlo Radchenko
-.container__hero {
-  max-width: 1280px;
-  height: 608px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
 
-  display: flex;
-  justify-content: center;
-  gap: 152px;
+.hero {
+  padding-top: 60px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 14px;
+  }
+}
+
+.container__hero {
+  gap: 40px;
+  position: relative;
+
+  @media screen and (min-width: 1280px) {
+    gap: 152px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .hero__title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 120%;
+
+  font-size: 28px;
+  line-height: 33px;
   margin: 0%;
 
   padding-bottom: 28px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 537px;
+    font-size: 42px;
+    line-height: 120%;
+    padding-bottom: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    font-size: 48px;
+    line-height: 120%;
+    padding-bottom: 28px;
+  }
 }
 
 .hero__about-text {
   font-family: 'Roboto';
   font-style: normal;
-  width: 502px;
-  height: 69px;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
 
   margin: 0%;
+  padding-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 40px;
+    width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 40px;
+    width: 502px;
+  }
 }
 
-// .hero__button {
-//   width: 100px;
-//   height: 32px;
+.hero__button {
+  width: 100px;
+  height: 32px;
 
-//   border: none;
+  border: none;
 
-//   margin-top: 40px;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
 
-//   font-weight: 400;
-//   font-size: 13.6667px;
-//   line-height: 150%;
+  background: #bbf330;
+  border-radius: 30px;
 
-//   background: #bbf330;
-//   border-radius: 30px;
+  &:hover,
+  &:focus {
+    background: #b5ff00;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 50px;
+  }
 
-//   &:hover,
-//   &:focus {
-//     background: #b5ff00;
-//   }
-// }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 73px;
+  }
+}
 
 // slider
 
 .hero__circle {
   position: relative;
-  margin: 14px 14px 14px 0;
+  margin: 0 14px 14px 0;
 
-  min-width: 580px;
-  min-height: 580px;
   background: #fefefe;
 
-  border: 26px solid #ffe550;
   border-radius: 50%;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-top: auto;
+    position: absolute;
+    right: 45px;
+    bottom: 0;
+    margin: 0 0 14px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 320px;
+    border: 14px solid #ffe550;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+    border: 26px solid #ffe550;
+  }
 }
 
 .slider__container {
@@ -95,18 +160,22 @@
   transition-duration: 0.5s;
 }
 
+.slider__img {
+  width: 292px;
+
+  @media screen and (min-width: 1280px) {
+    min-width: 528px;
+  }
+}
+
 .slider__button--left,
 .slider__button--right {
   display: flex;
   align-items: center;
   justify-content: center;
-  //   padding-top: 5.47px;
-  //   padding-right: 18.52px;
-  //   padding-bottom: 5.47px;
-  //   padding-left: 13.6px;
+
   position: absolute;
-  width: 48px;
-  height: 40px;
+
   padding: 0;
 
   background: #ffffff;
@@ -118,14 +187,39 @@
   &:focus {
     fill: #7eb101;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+  }
 }
 
 .slider__button--left {
   top: 47%;
-  left: -40px;
+  left: -23px;
+
+  @media screen and (min-width: 1280px) {
+    left: -40px;
+  }
 }
 
 .slider__button--right {
   top: 47%;
-  right: -40px;
+  right: -23px;
+
+  @media screen and (min-width: 1280px) {
+    right: -40px;
+  }
+}
+
+.slider__button {
+  @media screen and (max-width: 1279px) {
+    width: 11px;
+    height: 20px;
+  }
 }
