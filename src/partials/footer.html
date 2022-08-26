@@ -1,20 +1,25 @@
-<footer>
-
-    <div class="container">
-        <!--Footer logo-->
-        <div>
-        <a href=""><img src="./images/logo1.png" alt="Лого компанії"></a>
-        <!--Footer navigation-->
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+<footer class="footer-overlay">
+  <div class="footer">
+  <div class="container">
+    <!--Footer logo-->
+    <div>
+    <div class="footer-navigation">
+    <a href=""><img srcset="./images/logo1.png 1x, ./images/logo1@2.png 2x" src="./images/logo1.png" alt="Лого компанії"></a>
+    <!--Footer navigation-->
+    <div class="navigation">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+  </div>
     <!--Footer subscribe-->
+    <p class="subscribe">Subscribe</p>
     <form name="subscribe-form" class="subscribe-form">
         <input
           class="subscribe-form__field"
@@ -27,21 +32,21 @@
           class="subscribe-form__btn btn btn--border"
           type="submit"
         >
-
           Subscribe
         </button>
       </form>
-      <p>By subscribing you agree to with our <a class="" href="">Privacy Policy</a></p>
+        <p class="subscribe-form__policy">By subscribing you agree to with our <a class="subscribe-form__link" href="">Privacy Policy</a></p>
 
     </div>
     <!--Footer therms-->
-    <div>
-      <ul>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Terms of Service</a></li>
-        <li><a href="">Cookies Settings</a></li>
-      </ul>
-      <p>2022 FoodSta. All right reserved.</p>
+    <div class="therms">
+        <ul class="footer-therms">
+            <li class="footer-therms__item"><a class="footer-therms__link" href="">Privacy Policy</a></li>
+            <li class="footer-therms__item"><a class="footer-therms__link" href="">Terms of Service</a></li>
+            <li class="footer-therms__item"><a class="footer-therms__link" href="">Cookies Settings</a></li>
+        </ul>
+        <p class="footer-therms__text">2022 FoodSta. All right reserved.</p>
+    </div>
     </div>
   </div>
 </footer>
