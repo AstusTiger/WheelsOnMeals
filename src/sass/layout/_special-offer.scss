@@ -27,13 +27,9 @@
 }
 
 .yellow-bkg {
-  background-image: url('../images/special-offer/offer_bg_mobile_x1.png');
+  background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
   background-repeat: no-repeat;
   background-position: bottom;
-
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
-  }
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/special-offer/offer_bg_tablet_x1.png');
@@ -104,32 +100,38 @@
 
 .special-circle--img {
   z-index: 99;
-  width: 202px;
   position: absolute;
+  width: 202px;
+
   top: -41;
+  left: 30px;
 
   @media screen and (min-width: 768px) {
     width: 258px;
-    top: -50px;
+    top: -53px;
+    left: 38px;
   }
   @media screen and (min-width: 1280px) {
     width: 396px;
     top: -75px;
+    left: 55px;
   }
 }
 
 .special-elipse {
   position: absolute;
-  bottom: 10;
+  bottom: 13px;
 
   @media screen and (max-width: 767px) {
     width: 156px;
   }
   @media screen and (min-width: 768px) {
     width: 199px;
+    bottom: 13px;
   }
   @media screen and (min-width: 1280px) {
     width: 304px;
+    bottom: 20px;
   }
 }
 
