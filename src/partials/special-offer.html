@@ -1,79 +1,62 @@
 <section class="special-offer">
     <div class="container container__special-offer">
-        <div class="special-offer__pictures">
-              <ul class="apple">
-                <li class="apple__big">
-                  <!-- <img
-                    class="apple-big__img"
-                    srcset="
-              /src/images/special-offer-images/apple-big-mobile_x1.png 1x;
-              /src/images/special-offer-images/apple-big-mobile_x2.png 2x;
-              /src/images/hero/salt1-des.png 528w;
-              /src/images/hero/salat1-tab@2x.png 584;
-              /src/images/hero/salt1-des@2x.png 1056w"
-                    src="/src/images/hero/salt1-des.png"
-                    alt="salat1"
-                    width="528"
-                  /> -->
-                </li>
-                <li class="apple__middle">
-                  <!-- <img
-                    class="slider__img"
-                    srcset="
-              /src/images/hero/salat2-tab.png 292w;
-              /src/images/hero/salt2-des.png 528w;
-              /src/images/hero/salat2-tab@2x.png 584;
-              /src/images/hero/salt2-des@2x.png 1056w"
-                    src="/src/images/hero/salt2-des.png"
-                    alt="salat1"
-                    width="528"
-                  /> -->
-                </li>
-                <li class="apple__little">
-                  <!-- <img
-                    class="slider__img"
-                    srcset="
-              /src/images/hero/salat3-tab.png 292w;
-              /src/images/hero/salt3-des.png 528w;
-              /src/images/hero/salat3-tab@2x.png 584;
-              /src/images/hero/salt3-des@2x.png 1056w"
-                    src="/src/images/hero/salt3-des.png"
-                    alt="salat1"
-                    width="528"
-                  /> -->
-                </li>
-              </ul>
+
+       <div class="spesial__img">
+        <img 
+        srcset="
+        ./images/special-offer/apple_big_mobile_x1.png 280w,
+        ./images/special-offer/apple_big_tablet_x1.png 357w, 
+        ./images/special-offer/apple_big_desktop_x1.png 550w,
+        ./images/special-offer/apple_big_mobile_x2.png 560w,
+        ./images/special-offer/apple_big_tablet_x2.png 714w,
+        ./images/special-offer/apple_big_desktop_x2.png 1100w
+        "
+        sizes="(min-width: 1280px) 550px, (min-width: 768px) 357px, (min-width: 480px) 280px, 100vw"
+        src="./images/special-offer/apple_big_mobile_x1.png"
+        width="280" 
+        alt="apple">
+        
+       </div>
+        <div class="special-offer__text">
+            <h2 class="special-offer__title">
+                What’s Special About Our Offerings </h2>
+            <p class="special-offer__article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
+                Duis cursus, mi quis viverra ornare, eros dolor
+                interdum nulla, ut commodo diam libero vitae erat.
+            </p>
+            <div class="special-offer__element">
+            <svg class="special-offer__icon" width="48" height="48">
+                <use href="./images/sprite.svg#icon-rocket"></use>
+            </svg>
             </div>
-     <div class="special-offer__text">
-     <h2 class="special-offer__title">
-            What’s Special About Our Offerings </h2>
-        <p class="special-offer__article">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Suspendisse varius enim in eros elementum tristique. 
-            Duis cursus, mi quis viverra ornare, eros dolor 
-            interdum nulla, ut commodo diam libero vitae erat.
-        </p>
-        <!-- <svg class="special-offer__icon" width="48" height="48">
-            <use href="/src/images/icons.svg#icon-rocket"></use>
-          </svg> -->
-        <h3>
-            Fasest Delivery
-        </h3>
-        <p class="special-offer__article">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Suspendisse varius enim in eros.
-        </p>
-        <!-- <svg class="special-offer__icon" width="48" height="48">
-            <use href="/src/images/icons.svg#icon-click"></use>
-          </svg> -->
-        <h3> 
-            Easy to order
-        </h3>
-        <p class="special-offer__article">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Suspendisse varius enim in eros.
-        </p>
-        <!-- <button class="special-offer__button-order-big" type="button">Order Now</button> -->
-      </div>
+            <h3 class="special-offer__second-title">
+                Fasest Delivery
+            </h3>
+            <p class="special-offer__article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+            </p>
+            <div class="special-offer__element">
+            <svg class="special-offer__icon" width="48" height="48">
+                <use href="./images/sprite.svg#icon-click"></use>
+            </svg>
+            </div>
+            <h3 class="special-offer__second-title">
+                Easy to order
+            </h3>
+            <p class="special-offer__article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+            </p>
+            <button class="special-offer__button special-offer__button-order-big" type="button">Order Now</button>
+            <a class="special-offer__link" href="#">Read More</a>
+            <svg width="5" height="9">
+            <use  href="/src/images/sprite.svg#btn-right"></use>
+            </svg>
+        </div> 
+
     </div>
-  </section> -->
+    </div>
+</section>
