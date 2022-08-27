@@ -1,0 +1,104 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity var(--animation), visibility var(--animation);
+}
+
+.backdrop.sub-is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 30px);
+    min-width: 200px;
+    height: 150px;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--animation);
+}
+
+
+
+.backdrop.sub-is-hidden .modal {
+    // transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: fill var(--animation);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: var(--accent-color);
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal-form-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

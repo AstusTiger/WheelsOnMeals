@@ -78,14 +78,18 @@
             />
             <div class="subscribe-form__message">
               <svg class="subscribe-form__icon" width="12" height="12">
-                <use href="/src/images/sprite.svg#icon-rocket"></use>
+                <use href="/src/images/sprite.svg#icon-warning"></use>
               </svg>
               <span class="ubscribe-form__warning"
                 >Not a valid email address (example@email.com)</span
               >
             </div>
           </label>
-          <button class="subscribe-form__btn btn--green" type="submit">
+          <button
+            class="subscribe-form__btn btn--green"
+            type="submit"
+            data-modalsub-open
+          >
             Subscribe
           </button>
         </form>
@@ -93,3 +97,17 @@
     </div>
   </div>
 </section>
+
+<!-- Модальное окно -->
+<div class="backdrop" data-modalsub>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modalsub-close>
+      x
+      <!-- <svg class="modal-icon" width="30" height="30">
+        <use href="/src/images/sprite.svg#icon-warning"></use>
+      </svg> -->
+    </button>
+    <h2 class="modal-form-title">Thanks for subscribing.</h2>
+    <p>We sent you an email with our special offers</p>
+  </div>
+</div>
