@@ -1,4 +1,3 @@
-
 .special-offer {
   position: relative;
   padding-top: 50px;
@@ -84,6 +83,7 @@
 
 .special-circle {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 256px;
@@ -103,17 +103,33 @@
 }
 
 .special-circle--img {
+  z-index: 99;
   width: 202px;
   position: absolute;
-  top: 21px;
+  top: -41;
 
   @media screen and (min-width: 768px) {
     width: 258px;
-    top: -35px;
+    top: -50px;
   }
   @media screen and (min-width: 1280px) {
     width: 396px;
-    top: 0;
+    top: -75px;
+  }
+}
+
+.special-elipse {
+  position: absolute;
+  bottom: 10;
+
+  @media screen and (max-width: 767px) {
+    width: 156px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 199px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 304px;
   }
 }
 
