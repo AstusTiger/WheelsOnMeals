@@ -1,19 +1,25 @@
 @import './utils/variables';
-
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './utils/placeholder';
 @import './base/common';
 @import './base/container';
-
 @import './components/button-order-big';
 @import './components/button-order-little';
 @import './components/button-subscribe';
 @import './components/subscribe-input';
-
+@import './components/modal-form';
+@import './components/modal-window';
+@import './components/modal';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/special-offer';
 @import './layout/subscribe-section';
 @import './layout/top-sales';
 @import './layout/feedback';
+
+
+
 @import './layout/footer';
 @import './layout/food-photo';
 

@@ -1,1 +1,69 @@
-<p>header</p>
+<!DOCTYPE html>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__item">
+                <a class="logo header__logo" data-logo href="./index.html">
+                    <img class="header__img" src="./images/logo1.png" width="71" height="52" alt="company logo" />
+                </a>
+                <div class="burger-menu" id="burger-menu" data-menu>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item nav__item--current">
+                                <a class="header__link" href="./index.html" aria-label="home">Home</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link" href="./index.html" aria-label="about"
+                  >About</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link" href="./index.html" aria-label="service"
+                  >Service</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link" href="./index.html" aria-label="menu"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link" href="#contacts" aria-label="contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button
+          class="burger-menu__btn"
+          data-menu-button
+          type="button"
+          aria-label="mobile menu button"
+        >
+          <svg
+            class="burger-menu__btn-icon"
+            width="24"
+            height="16"
+            aria-label="mobile menu switch"
+            aria-controls="burger-menu"
+          >
+            <use class="icon-menu" href="./svg/icons.svg#icon-burger"></use>
+            <use class="icon-cross" href="./svg/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="header__btn">
+          <button
+            class="btn"
+            data-modal-open
+            type="button"
+            aria-label="order services"
+          >
+            <span class="header__text">Order Now</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
