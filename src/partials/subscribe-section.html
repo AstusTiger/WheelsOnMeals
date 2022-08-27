@@ -1,1 +1,83 @@
-<p>subscribe</p>
+<section class="subscribe">
+  <div class="container">
+    <div class="subscribe__wrapper">
+      <picture class="subscribe__img">
+        <!-- desctop screen-->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/feedback/banan@1x_desk.webp 1x,
+            ./images/feedback/banan@2x_desk.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/feedback/banan@1x_desk.png 1x,
+            ./images/feedback/banan@2x_desk.png 2x
+          "
+          type="image/png"
+        />
+        <!-- tablet screen-->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/feedback/banan@1x_tab.webp 1x,
+            ./images/feedback/banan@2x_tab.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/feedback/banan@1x_tab.png 1x,
+            ./images/feedback/banan@2x_tab.png 2x
+          "
+          type="image/png"
+        />
+        <!-- mobile screen-->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/feedback/banan@1x_mob.webp 1x,
+            ./images/feedback/banan@2x_mob.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/feedback/banan@1x_mob.png 1x,
+            ./images/feedback/banan@2x_mob.png 2x
+          "
+          type="image/png"
+        />
+        <!-- fallback -->
+        <img src="./images/feedback/banan@1x_mob.png" alt="Banan" width="" />
+      </picture>
+
+      <div class="subscribe__wrapper-text">
+        <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe__desk">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+
+        <form name="subscribe-form" class="subscribe-form">
+          <input
+            class="subscribe-form__field"
+            name="subscribe-email"
+            type="email"
+            placeholder="Enter your email"
+            autocomplete="on"
+            required
+          />
+          <button class="subscribe-form__btn btn--green" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
