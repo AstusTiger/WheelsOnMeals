@@ -1,4 +1,3 @@
-
 .special-offer {
   position: relative;
   padding-top: 50px;
@@ -28,13 +27,9 @@
 }
 
 .yellow-bkg {
-  background-image: url('../images/special-offer/offer_bg_mobile_x1.png');
+  background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
   background-repeat: no-repeat;
   background-position: bottom;
-
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
-  }
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/special-offer/offer_bg_tablet_x1.png');
@@ -84,6 +79,7 @@
 
 .special-circle {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 256px;
@@ -103,17 +99,39 @@
 }
 
 .special-circle--img {
-  width: 202px;
+  z-index: 99;
   position: absolute;
-  top: 21px;
+  width: 202px;
+
+  top: -41;
+  left: 30px;
 
   @media screen and (min-width: 768px) {
     width: 258px;
-    top: -35px;
+    top: -53px;
+    left: 38px;
   }
   @media screen and (min-width: 1280px) {
     width: 396px;
-    top: 0;
+    top: -75px;
+    left: 55px;
+  }
+}
+
+.special-elipse {
+  position: absolute;
+  bottom: 13px;
+
+  @media screen and (max-width: 767px) {
+    width: 156px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 199px;
+    bottom: 13px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 304px;
+    bottom: 20px;
   }
 }
 
