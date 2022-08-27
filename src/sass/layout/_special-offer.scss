@@ -27,7 +27,7 @@
 //     @media screen and (max-width:767px) {
 //         display: none;
 //     }
-    
+
 // }
 
 // .apple-for-desktop {
@@ -36,7 +36,83 @@
 //     }
 // }
 
-// .special-offer__icon {
-//     fill: var(--dark-green-color);
-// }
+.special-offer__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18em;
+    color: var(--black-color);
 
+    @media screen and (min-width:768px) {
+        font-size: 42px;
+        line-height: 1.17em;
+    }
+
+    @media screen and (min-width:1280px) {
+        font-size: 42px;
+        line-height: 1.19em;
+    }
+}
+
+.special-offer__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14em;
+    color: var(--black-color);
+
+    @media screen and (min-width:768px) {
+        font-size: 16px;
+        line-height: 1.19em;
+    }
+
+    @media screen and (min-width:1280px) {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+}
+
+.special-offer__circle-for-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--white-text);
+}
+
+.special-offer__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--dark-green-color);
+}
+
+.special-offer__caption {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17em;
+    color: var(--black-color);
+
+    @media screen and (min-width:1280px) {
+        font-size: 17.08px;
+        line-height: 1.4em;
+    }
+}
+
+.special-offer__article {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14em;
+    color: var(--black-color);
+
+    @media screen and (min-width:1280px) {
+        line-height: 1.5em;
+    }
+}
+
+.special-offer__button-read-more {
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    @media screen and (min-width:1280px) {
+        display: none;
+    }
+}
