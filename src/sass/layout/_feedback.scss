@@ -5,8 +5,18 @@
         (min-resolution: 2dppx) {
                 background-image: url(/src/images/feedback/backgr@2x_mob.png);
             }
-    background-repeat: no-repeat;
-background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+
+    @media screen and (min-width: 321px) {
+        background-image: url(/src/images/feedback/backgr@1x_mob480.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/feedback/backgr@2x_mob480.png);
+            }
+    }
 
     @media screen and (min-width: 768px) {
         background-image: url(/src/images/feedback/backgr@1x_tab.png);
@@ -73,7 +83,7 @@ background-position: 50% 0;
         display: flex;
         gap: 4px;
 
-        margin-bottom: 28px;
+        margin-bottom: 25px;
     }
 
     &__feedback-text {
@@ -81,7 +91,7 @@ background-position: 50% 0;
 
         font-family: inherit;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.18;
 
         color: var(--black-color);
@@ -108,8 +118,8 @@ background-position: 50% 0;
         padding: 4px 14px 4px 0;
 
 
-        font-size: 13.6667px;
-        line-height: 1.46;
+        font-size: 14px;
+        line-height: 1.5;
 
         color: var(--black-color);
         border-right: 1px solid var(--dark-green-color);
@@ -126,15 +136,27 @@ background-position: 50% 0;
 
 
     @media screen and(min-width: 768px) {
-        padding-bottom: 46px;
+        padding-bottom: 56px;
+
+        &__feedback {
+                padding: 12px;
+    
+            }
 
         &__feedback-list{
             display: flex;
             gap: 32px;
         }
 
+        &__feedback-item {
+            flex-basis: calc((100% - 32px) / 2);
+        }
+
+        &__feedback-item:not(:last-child) {
+            margin-bottom: 0;
+        }
+
         &__title {
-            margin-bottom: 48px;
             width: 100%;
 
             font-size: 42px;
@@ -144,6 +166,12 @@ background-position: 50% 0;
         &__desk {
             font-size: 16px;
             line-height: 1.19;
+        }
+        &__feedback-text {
+            font-size: 17px;
+            line-height: 1.23;
+
+            color: var(--black-color);
         }
     }
 
