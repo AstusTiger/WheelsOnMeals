@@ -1,21 +1,40 @@
 <section class="special-offer">
     <div class="container container__special-offer">
-       <div class="spesial__img">
+       <div class="special__img">
+        <div class="special-circle__border">
+        <div class="special-circle">
+        <img class="special-circle--img"
+        srcset="
+        ./images/special-offer/apple-mobile@1x.png 202w,
+        ./images/special-offer/apple-tab@1x.png 258w, 
+        ./images/special-offer/apple-des@1x.png 396w,
+        ./images/special-offer/apple-mobile@2x.png 404w,
+        ./images/special-offer/apple-tab@2x.png 515w,
+        ./images/special-offer/apple-des@2x.png 792w
+        "
+        sizes="(min-width: 1280px) 396px, (min-width: 768px) 258px, (max-width: 767px) 202px, 100vw"
+        src="./images/special-offer/apple-des@1x.png"
+        width="396" 
+        alt="apple">  
+      </div>
+    </div>
+       <div class="spesial__img-transparent">
         <img 
         srcset="
-        ./images/special-offer/apple_big_mobile_x1.png 280w,
-        ./images/special-offer/apple_big_tablet_x1.png 357w, 
-        ./images/special-offer/apple_big_desktop_x1.png 550w,
-        ./images/special-offer/apple_big_mobile_x2.png 560w,
-        ./images/special-offer/apple_big_tablet_x2.png 714w,
-        ./images/special-offer/apple_big_desktop_x2.png 1100w
-        "
-        sizes="(min-width: 1280px) 550px, (min-width: 768px) 357px, (min-width: 480px) 280px, 100vw"
-        src="./images/special-offer/apple_big_mobile_x1.png"
-        width="280" 
-        alt="apple">
-        
+        ./images/special-offer/apple_middle_tablet_x1.png 1x,
+        ./images/special-offer/apple_middle_tablet_x2.png 2x"
+        src="./images/special-offer/apple_middle_tablet_x1.png" alt="apple"
+        width="166"
+        height="210">
+        <img 
+        srcset="
+        ./images/special-offer/apple_little_tablet_x1.png 1x,
+        ./images/special-offer/apple_little_tablet_x2.png 2x"
+        src="./images/special-offer/apple_little_tablet_x1.png" alt="apple"
+        width="108"
+        height="136">
        </div>
+    </div>
         <div class="special-offer__text">
             <h2 class="special-offer__title">
                 What’s Special About Our Offerings </h2>
@@ -25,35 +44,41 @@
                 Duis cursus, mi quis viverra ornare, eros dolor
                 interdum nulla, ut commodo diam libero vitae erat.
             </p>
-            <div class="special-offer__element">
-            <svg class="special-offer__icon" width="48" height="48">
-                <use href="./images/sprite.svg#icon-rocket"></use>
-            </svg>
-            </div>
-            <h3 class="special-offer__second-title">
+            <div class="special-offer__elements-block">
+                <div class="special-offer__element-block">
+                <div class="special-offer__element">
+                    <svg class="special-offer__icon" width="48" height="48">
+                        <use href="./images/sprite.svg#icon-rocket"></use>
+                    </svg>
+                </div>
+                <h3 class="special-offer__second-title">
                 Fasest Delivery
-            </h3>
-            <p class="special-offer__article">
+                </h3>
+                <p class="special-offer__article-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros.
-            </p>
-            <div class="special-offer__element">
-            <svg class="special-offer__icon" width="48" height="48">
-                <use href="./images/sprite.svg#icon-click"></use>
-            </svg>
+                </p>
             </div>
-            <h3 class="special-offer__second-title">
-                Easy to order
-            </h3>
-            <p class="special-offer__article">
+            <div  class="special-offer__element-block">
+                <div class="special-offer__element">
+                    <svg class="special-offer__icon" width="48" height="48">
+                        <use href="./images/sprite.svg#icon-click"></use>
+                    </svg>
+                </div>
+                <h3 class="special-offer__second-title">
+                Easy to Order
+                </h3>
+                <p class="special-offer__article-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-            </p>
+                Suspendisse varius enim in eros.</p>
+            </div>
+            </div>
             <button class="special-offer__button special-offer__button-order-big" type="button">Order Now</button>
-            <a class="special-offer__link" href="#">Read More</a>
+            <div class="special-offer__link"><a href="#">Read More</a>
             <svg width="5" height="9">
             <use  href="/src/images/sprite.svg#btn-right"></use>
-            </svg>
+            </svg></div>
+            
         </div> 
     </div>
     </div>
