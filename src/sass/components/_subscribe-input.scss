@@ -29,6 +29,8 @@
     &__field:required:valid {
         border-color: var(--dark-green-color);
 
+    
+
     }
         @media screen and (min-width: 768px) {
             display: flex;
@@ -38,6 +40,29 @@
                     width: 394px;
                 }
         }
-    
       
+}
+
+.subscribe-form__group {
+    position: relative;
+}
+
+.subscribe-form__message {
+    position: absolute;
+    top: calc(100% - 16px);
+    left: 0;
+    opacity: 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--red-color-error);
+}
+.subscribe-form__icon {
+    fill: var(--red-color-error);
+}
+
+.subscribe-form__field:invalid:required:not(:placeholder-shown)~.subscribe-form__message {
+    opacity: 1;
 }

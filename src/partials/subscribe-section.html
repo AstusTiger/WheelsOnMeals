@@ -65,14 +65,24 @@
         </p>
 
         <form name="subscribe-form" class="subscribe-form">
-          <input
-            class="subscribe-form__field"
-            name="subscribe-email"
-            type="email"
-            placeholder="Enter your email"
-            autocomplete="on"
-            required
-          />
+          <label class="subscribe-form__group">
+            <input
+              class="subscribe-form__field"
+              name="subscribe-email"
+              type="email"
+              placeholder="Enter your email"
+              autocomplete="on"
+              required
+            />
+            <div class="subscribe-form__message">
+              <svg class="subscribe-form__icon" width="12" height="12">
+                <use href="/src/images/sprite.svg#icon-rocket"></use>
+              </svg>
+              <span class="ubscribe-form__warning"
+                >Not a valid email address (example@email.com)</span
+              >
+            </div>
+          </label>
           <button class="subscribe-form__btn btn--green" type="submit">
             Subscribe
           </button>
