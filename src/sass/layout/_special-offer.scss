@@ -3,6 +3,11 @@
   padding-top: 50px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 100;
+    padding-top: 0;
+  }
+
   @media screen and (min-width: 1280px) {
     padding-bottom: 43px;
   }
@@ -11,6 +16,8 @@
 .container__special-offer {
   @media screen and (min-width: 1280px) {
     display: flex;
+    // padding-bottom: 43px;
+    align-items: center;
     gap: 90px;
   }
 }
@@ -97,7 +104,7 @@
 
   @media screen and (min-width: 768px) {
     width: 258px;
-    top: 15px;
+    top: -35px;
   }
   @media screen and (min-width: 1280px) {
     width: 396px;
