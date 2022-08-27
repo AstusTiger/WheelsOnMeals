@@ -19,13 +19,14 @@
 
     }
 
-    &__field:not(:placeholder-shown), 
-        &__field:focus
+    &__field:invalid:not(:placeholder-shown), 
+        &__field:focus, &__field:hover
      {
         border-color: var(--red-color-error);
+        outline: transparent;
     }
 
-    &__field:required:valid:not(:placeholder-shown) {
+    &__field:required:valid {
         border-color: var(--dark-green-color);
 
     }
