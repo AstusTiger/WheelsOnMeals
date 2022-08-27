@@ -1,4 +1,4 @@
-.subscribe {
+.subscribe-section {
     padding-bottom: 60px;
     
     &__img {
@@ -6,7 +6,6 @@
         justify-content: center;
         margin-right: 0;
 
-        width: 280px;
     }
 
     &__title {
@@ -37,7 +36,7 @@
     @media screen and (min-width: 768px) {
         
         &__img {
-                margin-left: auto;
+                justify-content: flex-end;
             }
         &__title {
         width: 100%;
