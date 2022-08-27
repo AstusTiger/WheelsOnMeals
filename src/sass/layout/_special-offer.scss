@@ -1,26 +1,45 @@
+.yellow-bkg {
+    background-image: url(/src/images/special-offer/offer_bg_mobile_x1.png);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                background-image: url(/src/images/special-offer/offer_bg_mobile_x2.png);
+            }
+    background-repeat: no-repeat;
+background-position: 50% 0;
+
+    @media screen and (min-width: 768px) {
+        background-image: url(/src/images/special-offer/offer_bg_tablet_x1.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/special-offer/offer_bg_tablet_x2.png);
+            }
+    }
+           @media screen and (min-width: 1280px) {
+               background-image: url(/src/images/special-offer/offer_bg_desktop_x1.png);
+    
+               @media (min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+                   background-image: url(/src/images/special-offer/offer_bg_desktop_x2.png);
+               }
+           }
+        }
+
+.special-offer {
+    padding-top: 47px;
+    padding-bottom: 63px;
+}
+
+
 .container__special-offer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 28px;
-    // width: 480px;
-    // background-image: url('../images/special-offer/offer_bg_mobile_x1.png');
-    // background-repeat: no-repeat;
-    // background-position: bottom;
-    // background-size: 100%;
-    // @media screen and (min-width:768px) {
-    //     background-image: url('../images/special-offer/offer_bg_tablet_x1.png');
-    //     background-repeat: no-repeat;
-    //     background-position: bottom;
-    //     background-size: 100%;
-    // }
-    // @media screen and (min-width:1280px) {
-    //     background-image: url('../images/special-offer/offer_bg_desktop_x1.png');
-    //     background-repeat: no-repeat;
-    //     background-position: bottom;
-    //     background-size: 100%;
-    // }
 }
 
 // .apple-for-mobile {
