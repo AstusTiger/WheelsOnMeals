@@ -10,7 +10,7 @@
     transition: opacity var(--animation), visibility var(--animation);
 }
 
-.backdrop-hello.hello-is-hidden,
+.backdrop-hello.hello-is-hidden
  {
     opacity: 0;
     visibility: hidden;
