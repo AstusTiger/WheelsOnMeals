@@ -1,4 +1,4 @@
-.backdrop-sub {
+.backdrop-hello {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,27 +10,22 @@
     transition: opacity var(--animation), visibility var(--animation);
 }
 
-.backdrop-sub.sub-is-hidden,
-.subscribe-form__field:invalid:required:not(:placeholder-shown)~.backdrop-sub
+.backdrop-hello.hello-is-hidden,
  {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.subscribe-form__field:required:placeholder-shown~.backdrop-sub {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
-.modal-sub {
+
+.modal-hello {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: calc(100% - 120px);
+    width: calc(100% - 420px);
     min-width: 200px;
-    height: 150px;
+    height: 200px;
     transform: translate(-50%, -50%) scale(1);
     padding: 40px;
     background-color: #ffffff;
@@ -41,11 +36,11 @@
 
 
 
-.backdrop-sub.sub-is-hidden .modal-sub {
+.backdrop-hello.hello-is-hidden .modal-hello {
     transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal-sub-close-btn {
+.modal-hello-close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -61,16 +56,16 @@
     transition: fill var(--animation);
 }
 
-.modal-sub-close-btn,
-.modal-sub-close-btn:focus {
+.modal-hello-close-btn,
+.modal-hello-close-btn:focus {
     fill: var(--accent-color);
 }
 
-.modal-sub {
+.modal-hello {
     text-align: center;
 }
 
-.modal-sub-close-btn {
+.modal-hello-close-btn {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 20px;
@@ -78,35 +73,3 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

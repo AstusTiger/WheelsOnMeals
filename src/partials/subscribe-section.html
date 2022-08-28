@@ -66,7 +66,7 @@
           varius enim in eros elementum tristique.
         </p>
 
-        <form name="subscribe-form" class="subscribe-form">
+        <form name="subscribe-form" class="subscribe-form" id="subscribe-form">
           <label class="subscribe-form__group">
             <input
               class="subscribe-form__field"
@@ -76,6 +76,25 @@
               autocomplete="on"
               required
             />
+            <!-- Модальное окно -->
+            <div class="backdrop-sub sub-is-hidden" data-modalsub>
+              <div class="modal-sub">
+                <button
+                  type="button"
+                  class="modal-sub-close-btn"
+                  data-modalsub-close
+                >
+                  x
+                  <!-- <svg class="modal-icon" width="30" height="30">
+        <use href="/src/images/sprite.svg#icon-warning"></use>
+      </svg> -->
+                </button>
+                <h2 class="modal-form-title">Thanks for subscribing!</h2>
+                <p>We sent you an email with our special offers</p>
+              </div>
+            </div>
+            <!-- Закончилось модальное окно -->
+
             <div class="subscribe-form__message">
               <svg class="subscribe-form__icon" width="12" height="12">
                 <use href="/src/images/sprite.svg#icon-warning"></use>
@@ -97,17 +116,3 @@
     </div>
   </div>
 </section>
-
-<!-- Модальное окно -->
-<div class="backdrop" data-modalsub>
-  <div class="modal">
-    <button type="button" class="modal-close-btn" data-modalsub-close>
-      x
-      <!-- <svg class="modal-icon" width="30" height="30">
-        <use href="/src/images/sprite.svg#icon-warning"></use>
-      </svg> -->
-    </button>
-    <h2 class="modal-form-title">Thanks for subscribing.</h2>
-    <p>We sent you an email with our special offers</p>
-  </div>
-</div>
