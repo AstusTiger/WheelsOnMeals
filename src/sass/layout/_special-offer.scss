@@ -1,3 +1,5 @@
+// special-offer styles Pavlo Radchenko
+
 .special-offer {
   position: relative;
   padding-top: 60px;
@@ -20,7 +22,6 @@
 .container__special-offer {
   @media screen and (min-width: 1280px) {
     display: flex;
-    // padding-bottom: 43px;
     align-items: center;
     gap: 90px;
   }
@@ -72,6 +73,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    border: 5px solid rgba(255, 255, 255, 0.5);
     width: 550px;
     height: 550px;
   }
@@ -188,13 +190,14 @@
   }
 }
 
-.special-offer__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 27px;
-  height: 27px;
-  fill: var(--dark-green-color);
+.special-offer__elements-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 67px;
+  }
 }
 
 .special-offer__element {
@@ -207,6 +210,15 @@
   border-radius: 50%;
 }
 
+.special-offer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  fill: var(--dark-green-color);
+}
+
 .special-offer__second-title {
   font-size: 18px;
   line-height: 21px;
@@ -216,25 +228,35 @@
 
 .special-offer__button {
   margin: 0;
+  transition: border var(--animation);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transition: border var(--animation);
+  }
 }
+
 .special-offer__link {
   display: inline;
   font-weight: 400;
   font-size: 13.6667px;
   line-height: 150%;
   padding-left: 24px;
-  padding-right: 8px;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    transition: color var(--animation);
+    color: var(--dark-green-color);
+  }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.special-offer__elements-block {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 116px;
-  }
-  @media screen and (min-width: 1280px) {
-    gap: 67px;
-  }
+.special-offer__link-arrow {
+  margin-left: 8px;
+  fill: currentColor;
 }
