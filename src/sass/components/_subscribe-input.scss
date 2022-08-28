@@ -21,17 +21,21 @@
 
     }
 
-    &__field:invalid:not(:placeholder-shown), 
-        &__field:focus, &__field:hover
+    &__field:invalid:not(:placeholder-shown) 
      {
         border-color: var(--red-color-error);
         outline: transparent;
     }
 
+         &__field:focus,
+         &__field:hover {
+             border-color: var(--dark-green-color);
+             outline: transparent;
+         }
+
     &__field:required:valid {
         border-color: var(--dark-green-color);
-
-    
+        background: var(--white-color);
 
     }
         @media screen and (min-width: 768px) {
@@ -51,7 +55,7 @@
 
 .subscribe-form__message {
     position: absolute;
-    top: calc(100% - 16px);
+    top: 100%;
     left: 0;
     opacity: 0;
     transform: scale(0.8);
@@ -63,6 +67,10 @@
     color: var(--red-color-error);
 
     transition: opacity var(--animation), transform var(--animation);
+
+    @media screen and (min-width: 1280px) {
+            top: calc(100% - 16px);
+    }
 }
 .subscribe-form__icon {
     fill: var(--red-color-error);

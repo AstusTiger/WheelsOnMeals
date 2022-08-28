@@ -1,40 +1,40 @@
 .yellow-wave {
     background-image: url(/src/images/feedback/backgr@1x_mob.png);
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-                background-image: url(/src/images/feedback/backgr@2x_mob.png);
-            }
+    // @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //             background-image: url(/src/images/feedback/backgr@2x_mob.png);
+    //         }
         background-repeat: no-repeat;
         background-position: 50% 0;
 
     @media screen and (min-width: 321px) {
         background-image: url(/src/images/feedback/backgr@1x_mob480.png);
         
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(/src/images/feedback/backgr@2x_mob480.png);
-            }
+            // @media (min-device-pixel-ratio: 2),
+            // (min-resolution: 192dpi),
+            // (min-resolution: 2dppx) {
+            //     background-image: url(/src/images/feedback/backgr@2x_mob480.png);
+            // }
     }
 
     @media screen and (min-width: 768px) {
         background-image: url(/src/images/feedback/backgr@1x_tab.png);
         
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(/src/images/feedback/backgr@2x_tab.png);
-            }
+            // @media (min-device-pixel-ratio: 2),
+            // (min-resolution: 192dpi),
+            // (min-resolution: 2dppx) {
+            //     background-image: url(/src/images/feedback/backgr@2x_tab.png);
+            // }
     }
            @media screen and (min-width: 1280px) {
                background-image: url(/src/images/feedback/backgr@1x_desk.png);
     
-               @media (min-device-pixel-ratio: 2),
-               (min-resolution: 192dpi),
-               (min-resolution: 2dppx) {
-                   background-image: url(/src/images/feedback/backgr@2x_desk.png);
-               }
+            //    @media (min-device-pixel-ratio: 2),
+            //    (min-resolution: 192dpi),
+            //    (min-resolution: 2dppx) {
+            //        background-image: url(/src/images/feedback/backgr@2x_desk.png);
+            //    }
            }
         }
 
