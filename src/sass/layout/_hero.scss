@@ -97,6 +97,7 @@
   &:hover,
   &:focus {
     background: var(--green-color-hover);
+    transition: background-color var(--animation);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -182,6 +183,7 @@
 
   &:hover,
   &:focus {
+    transition: fill var(--animation);
     fill: var(--dark-green-color);
   }
 

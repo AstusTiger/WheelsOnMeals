@@ -228,6 +228,12 @@
 
 .special-offer__button {
   margin: 0;
+  transition: border var(--animation);
+
+  &:hover,
+  &:focus {
+    transition: border var(--animation);
+  }
 }
 
 .special-offer__link {
@@ -236,9 +242,11 @@
   font-size: 13.6667px;
   line-height: 150%;
   padding-left: 24px;
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
+    transition: color var(--animation);
     color: var(--dark-green-color);
   }
 
