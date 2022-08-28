@@ -3,17 +3,17 @@
     left: 50%;
     transform: translateX(-50%) scale(1);
     padding: 40px;
-    background: var(--primary-bgr-color);
+    background: var(--yellow-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     @include transition(transform);
     .backdrop.is-hidden & {
         transform: translateX(-50%) scale(1.1);
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: $desktop) {
         top: 93px;
     }
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: $tablet) {
         top: 83px;
         padding: 30px;
         padding-top: 40px;
