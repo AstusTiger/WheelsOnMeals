@@ -285,7 +285,10 @@
   align-items: center;
   flex-direction: row;
   gap: 30px;
-  //   justify-content: flex-end;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .header__nav-list {
   display: flex;
