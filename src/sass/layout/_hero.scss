@@ -188,6 +188,7 @@
 
   &:active {
     fill: var(--black-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
 
   @media screen and (min-width: 768px) {
