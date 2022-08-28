@@ -20,6 +20,15 @@
             url(../images/footer/banana-768@1.png) right 233px bottom no-repeat,
             url(../images/footer/orange2-768@1.png) bottom left no-repeat;
    }
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+    background:  url(../images/footer/orange-768@2.png) top right no-repeat cover,
+                 url(../images/footer/apple-768@2.png) bottom right no-repeat cover,
+                 url(../images/footer/apple2-768@2.png) right 363px bottom no-repeat cover,
+                 url(../images/footer/banana-768@2.png) right 233px bottom no-repeat cover,
+                 url(../images/footer/orange2-768@2.png) bottom left no-repeat cover;
+   }
    @media screen and (min-width: 1280px) {
       background: url(../images/footer/fruit_footer-1280@1.png) bottom center no-repeat;
       @media (min-device-pixel-ratio: 2),
@@ -32,9 +41,10 @@
   
   .footer {
     padding: 60px 0;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
     
     @media screen and (min-width: 768px) {
-     padding-top: 118px;
+     padding-top: 100px;
      padding-bottom: 100px;
 
     }
@@ -63,10 +73,11 @@
      }
   }
  .subscribe-container {
-
+   @media screen and (max-width: 1279px) {
+   padding-top: 40px;
+   }
  }
   .subscribe {
- padding-top: 40px;
  margin-bottom: 12px;
  font-weight: 600;
  font-size: 14px;
@@ -74,12 +85,13 @@
   }
   
   .subscribe-form__policy {
-    margin-top: 20px;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
 
   @media screen and (min-width: 768px) {
+   margin-top: 0;
    font-size: 12px;
    line-height: 1.16;
    
@@ -98,6 +110,7 @@
      display: flex;
      align-items: flex-end;
      justify-content: space-between;
+     padding-top: 100px;
      }
  }
  

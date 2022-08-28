@@ -31,21 +31,52 @@
     <!--Footer subscribe-->
     <div class="subscribe-container">
     <p class="subscribe">Subscribe</p>
-    <form name="subscribe-form" class="subscribe-form">
+    <form name="subscribe-form" class="subscribe-form" id="subscribe-form">
+      <label class="subscribe-form__group">
         <input
-          class="subscribe-form__field"
+          class="subscribe-form__field field--footer"
           name="subscribe-email"
           type="email"
           placeholder="Enter your email"
           autocomplete="on"
+          required
         />
-        <button
-          class="subscribe-form__btn btn btn--border"
-          type="submit"
-        >
-          Subscribe
-        </button>
-      </form>
+        <!-- Модальное окно -->
+        <div class="backdrop-sub sub-is-hidden" data-modalsub>
+          <div class="modal-sub">
+            <button
+              type="button"
+              class="modal-sub-close-btn"
+              data-modalsub-close
+            >
+              x
+              <!-- <svg class="modal-icon" width="30" height="30">
+    <use href="/src/images/sprite.svg#icon-warning"></use>
+  </svg> -->
+            </button>
+            <h2 class="modal-form-title">Thanks for subscribing!</h2>
+            <p>We sent you an email with our special offers</p>
+          </div>
+        </div>
+        <!-- Закончилось модальное окно -->
+
+        <div class="subscribe-form__message">
+          <svg class="subscribe-form__icon" width="12" height="12">
+            <use href="/src/images/sprite.svg#icon-warning"></use>
+          </svg>
+          <span class="ubscribe-form__warning"
+            >Not a valid email address (example@email.com)</span
+          >
+        </div>
+      </label>
+      <button
+        class="subscribe-form__btn btn btn--border"
+        type="submit"
+        data-modalsub-open
+      >
+        Subscribe
+      </button>
+    </form>
         <p class="subscribe-form__policy">By subscribing you agree to with our <a class="subscribe-form__link" href="">Privacy Policy</a></p>
       </div>
     </div>
