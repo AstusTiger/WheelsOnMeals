@@ -132,15 +132,16 @@
 // }
 
 .burger-menu__btn {
-  position: absolute;
   top: 12px;
   right: 23px;
   z-index: 10;
   @include centered-flex($type: inline-flex);
+
   background-color: transparent;
   border: none;
   margin: 0;
-  padding: 10px;
+  margin-left: auto;
+  padding: 0;
   cursor: pointer;
   @include transition(color);
   & .icon-cross {
@@ -167,7 +168,7 @@
   &:focus-visible {
     color: var(--light-green-color);
   }
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -272,10 +273,12 @@
   display: flex;
 
   @media screen and (min-width: 768px) {
+    display: flex;
     gap: 191px;
   }
 
   @media screen and (min-width: 1280px) {
+    display: flex;
     gap: 735px;
   }
 }
@@ -283,6 +286,7 @@
 .burger-menu {
   display: flex;
   align-items: center;
+
   flex-direction: row;
   gap: 30px;
 
