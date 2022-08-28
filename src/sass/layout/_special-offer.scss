@@ -20,7 +20,6 @@
 .container__special-offer {
   @media screen and (min-width: 1280px) {
     display: flex;
-    // padding-bottom: 43px;
     align-items: center;
     gap: 90px;
   }
@@ -72,6 +71,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    border: 5px solid rgba(255, 255, 255, 0.5);
     width: 550px;
     height: 550px;
   }
