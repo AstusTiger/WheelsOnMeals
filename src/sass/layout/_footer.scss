@@ -19,9 +19,17 @@
             url(../images/footer/apple2-768@1.png) right 363px bottom no-repeat,
             url(../images/footer/banana-768@1.png) right 233px bottom no-repeat,
             url(../images/footer/orange2-768@1.png) bottom left no-repeat;
-
+   }
+   @media screen and (min-width: 1280px) {
+      background: url(../images/footer/fruit_footer-1280@1.png) bottom center no-repeat;
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         background: url(../images/footer/fruit_footer-1280@2.png)1211px bottom center no-repeat;
+      }
    }
   }
+  
   .footer {
     padding: 60px 0;
     
@@ -31,9 +39,16 @@
 
     }
  }
+ .footer-containers{
+   @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: space-between;
+      }
+ }
  
   .footer-navigation {
      display: flex;
+   
   }
  
   .navigation {
@@ -47,7 +62,9 @@
      display: flex;
      }
   }
- 
+ .subscribe-container {
+
+ }
   .subscribe {
  padding-top: 40px;
  margin-bottom: 12px;
@@ -61,6 +78,12 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+   font-size: 12px;
+   line-height: 1.16;
+   
+   }
   }
  
   .subscribe-form__link {
@@ -89,6 +112,13 @@
   line-height: 1.2;
   text-decoration-line: underline;
   color: var(--dark-green-color);
+
+  @media screen and (min-width: 768px) {
+   font-size: 12px;
+   line-height: 1.16;
+   margin-right: 20px;
+   
+   }
   }
  
  .footer-therms__text {
@@ -98,8 +128,11 @@
  font-size: 10px;
  line-height: 1.2;
  color: var(--black-color);
+
  @media screen and (min-width: 768px) {
      margin-top: 0;
+     font-size: 12px;
+     line-height: 1.16;
      
      }
  }

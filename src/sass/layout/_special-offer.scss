@@ -1,7 +1,8 @@
+// special-offer styles Pavlo Radchenko
 
 .special-offer {
   position: relative;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 480px) {
@@ -14,27 +15,22 @@
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 43px;
+    padding-bottom: 100px;
   }
 }
 
 .container__special-offer {
   @media screen and (min-width: 1280px) {
     display: flex;
-    // padding-bottom: 43px;
     align-items: center;
     gap: 90px;
   }
 }
 
 .yellow-bkg {
-  background-image: url('../images/special-offer/offer_bg_mobile_x1.png');
+  background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
   background-repeat: no-repeat;
   background-position: bottom;
-
-  @media screen and (min-width: 480px) {
-    background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
-  }
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/special-offer/offer_bg_tablet_x1.png');
@@ -77,6 +73,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    border: 5px solid rgba(255, 255, 255, 0.5);
     width: 550px;
     height: 550px;
   }
@@ -84,6 +81,7 @@
 
 .special-circle {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 256px;
@@ -103,17 +101,39 @@
 }
 
 .special-circle--img {
-  width: 202px;
+  z-index: 99;
   position: absolute;
-  top: 21px;
+  width: 202px;
+
+  top: -41;
+  left: 30px;
 
   @media screen and (min-width: 768px) {
     width: 258px;
-    top: -35px;
+    top: -53px;
+    left: 38px;
   }
   @media screen and (min-width: 1280px) {
     width: 396px;
-    top: 0;
+    top: -75px;
+    left: 55px;
+  }
+}
+
+.special-elipse {
+  position: absolute;
+  bottom: 13px;
+
+  @media screen and (max-width: 767px) {
+    width: 156px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 199px;
+    bottom: 13px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 304px;
+    bottom: 20px;
   }
 }
 
@@ -170,13 +190,14 @@
   }
 }
 
-.special-offer__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 27px;
-  height: 27px;
-  fill: var(--dark-green-color);
+.special-offer__elements-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 67px;
+  }
 }
 
 .special-offer__element {
@@ -189,6 +210,15 @@
   border-radius: 50%;
 }
 
+.special-offer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  fill: var(--dark-green-color);
+}
+
 .special-offer__second-title {
   font-size: 18px;
   line-height: 21px;
@@ -198,25 +228,35 @@
 
 .special-offer__button {
   margin: 0;
+  transition: border var(--animation);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transition: border var(--animation);
+  }
 }
+
 .special-offer__link {
   display: inline;
   font-weight: 400;
   font-size: 13.6667px;
   line-height: 150%;
   padding-left: 24px;
-  padding-right: 8px;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    transition: color var(--animation);
+    color: var(--dark-green-color);
+  }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.special-offer__elements-block {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 116px;
-  }
-  @media screen and (min-width: 1280px) {
-    gap: 67px;
-  }
+.special-offer__link-arrow {
+  margin-left: 8px;
+  fill: currentColor;
 }

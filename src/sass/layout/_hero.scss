@@ -1,12 +1,12 @@
-// hero Pavlo Radchenko
+// hero styles Pavlo Radchenko
 
 .hero {
   padding-top: 60px;
-  padding-bottom: 56px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 1280px) {
     padding-top: 14px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -83,6 +83,7 @@
   width: 98px;
   height: 32px;
   margin: 0;
+  cursor: pointer;
 
   border: none;
 
@@ -90,16 +91,15 @@
   font-size: 13.6667px;
   line-height: 150%;
 
+  transition: background-color var(--animation);
   background: var(--light-green-color);
   border-radius: 30px;
 
   &:hover,
   &:focus {
     background: var(--green-color-hover);
+    transition: background-color var(--animation);
   }
-  // @media screen and (max-width: 767px) {
-  //   margin-bottom: 50px;
-  // }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 73px;
@@ -171,11 +171,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   position: absolute;
 
   padding: 0;
 
+  transition: fill var(--animation);
   background: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
@@ -183,11 +185,13 @@
 
   &:hover,
   &:focus {
+    transition: fill var(--animation);
     fill: var(--dark-green-color);
   }
 
   &:active {
     fill: var(--black-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
 
   @media screen and (min-width: 768px) {
