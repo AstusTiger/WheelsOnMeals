@@ -1,18 +1,14 @@
 %container {
-
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
     @media screen and (min-width: $mobile) {
         max-width: $mobile;
     }
-
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
     }
-
     @media screen and (min-width: $desktop) {
         max-width: $desktop;
     }
@@ -20,12 +16,11 @@
 
 %section {
     padding-top: 60px;
-        padding-bottom: 60px;
-        
-   @media screen and (min-width: $desktop) {
-    padding-top: 94px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
         padding-bottom: 94px;
-   }
+    }
 }
 
 %link {
@@ -46,7 +41,6 @@
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -59,8 +53,7 @@
     line-height: 1.18;
     text-align: center;
     margin-bottom: 30px;
-
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         font-size: 36px;
         line-height: 1.17;
         margin-bottom: 50px;
@@ -68,10 +61,9 @@
 }
 
 %button {
-    border-radius: 4px;
+    border-radius: 30px;
     border: none;
-    font-size: 16px;
-
+    font-size: 14px;
     font-family: inherit;
     cursor: pointer;
     text-align: center;
