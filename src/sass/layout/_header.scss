@@ -270,10 +270,13 @@
 
 .header__item {
   display: flex;
-  gap: 735px;
 
   @media screen and (min-width: 768px) {
     gap: 191px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 735px;
   }
 }
 
