@@ -16,7 +16,7 @@
 
         padding-top: 120px;
         padding-bottom: 120px;
-        height: 1425px;
+        
     }
 
     @media screen and (min-width: 1280px) {}
@@ -112,9 +112,9 @@
 }
 
 .photo__img:nth-child(n+4) {
-    transform: scale(0);
+    display: none;
 
     @media screen and (min-width: 768px) {
-        transform: none;
+        display: unset;
     }
 }
