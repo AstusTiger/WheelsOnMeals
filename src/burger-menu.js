@@ -13,19 +13,21 @@
 
     mobileMenuRef.classList.toggle('is-open');
     mobileLogoRef.classList.toggle('logo--hidden');
-    // mobileBodyRef.classList.toggle('no-scroll--burger-menu');
-
-    // Закрываем мобильное меню на более широких экранах
-    // в случае изменения ориентации устройства.
-
-    // window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    //   if (!e.matches) return;
-    //   mobileMenuRef.classList.remove('is-open');
-    //   mobileBodyRef.classList.remove('no-scroll--burger-menu');
-    //   mobileLogoRef.classList.remove('logo--hidden');
-    //   menuBtnRef.classList.remove('is-open');
-
-    //   menuBtnRef.setAttribute('aria-expanded', false);
-    // });
   });
 })();
+
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[data-menu-button]'),
+//     closeModalBtn: document.querySelector('[data-menu-button-close]'),
+//     modal: document.querySelector('[data-menu]'),
+//   };
+
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+//   function toggleModal() {
+//     refs.modal.classList.toggle('modal__backdrop--is-hidden');
+//   }
+// })();
+
