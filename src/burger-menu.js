@@ -2,7 +2,7 @@
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
   const mobileLogoRef = document.querySelector('[data-logo]');
-  const mobileBodyRef = document.querySelector('[data-body]');
+  const modalCross = document.querySelector('.burger-menu__btn-icon-cross');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded =
@@ -14,4 +14,8 @@
     mobileMenuRef.classList.toggle('is-open');
     mobileLogoRef.classList.toggle('logo--hidden');
   });
+
+  modalCross.addEventListener('click', () => {
+    mobileMenuRef.classList.toggle('is-open')
+  } )
 })();
