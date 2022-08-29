@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),o=document.querySelector("[data-logo]");document.querySelector("[data-body]");e.addEventListener("click",(()=>{const a="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!a),t.classList.toggle("is-open"),o.classList.toggle("logo--hidden")}))})();
+//# sourceMappingURL=index.c1992fda.js.map
