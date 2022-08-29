@@ -20,14 +20,6 @@
   padding: 10 0 10 0;
 }
 
-// .burger__menu--overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-// }
-
 .burger-menu {
   @media screen and (max-width: 767px) {
     overflow-x: hidden;
@@ -41,20 +33,20 @@
     text-decoration: none;
     position: absolute;
 
-    left: 100%;
+    right: 0;
     top: 50px;
-    /* White */
+
     background-color: #fefefe;
-    /* Meny shadow */
+
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
     border-radius: 30px 0px 30px 30px;
-    transform: translateX(0);
+    transform: translateX(-100%);
 
     @include transition((transform, opacity));
     &.is-open {
       z-index: 1;
       opacity: 1;
-      transform: translateX(-100%);
+      transform: translateX(0);
       overflow-y: scroll;
     }
   }
