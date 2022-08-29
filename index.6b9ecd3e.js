@@ -1,0 +1,2 @@
+!function(){var e,t,n,o;e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),n=document.querySelector("[data-logo]"),o=document.querySelector(".burger-menu__btn-icon-cross"),e.addEventListener("click",(function(){var o="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!o),t.classList.toggle("is-open"),n.classList.toggle("logo--hidden")})),o.addEventListener("click",(function(){t.classList.toggle("is-open")}))}();
+//# sourceMappingURL=index.6b9ecd3e.js.map
