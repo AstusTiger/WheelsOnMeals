@@ -178,7 +178,7 @@ font-size: 14px;line-height: 150%;
 
 .nav__list {
     @extend %list;
-    @media screen and (max-width: $mobile) {
+    @media screen and (min-width: $mobile) {
         //position: absolute;
         display: flex;
         //flex-wrap: nowrap;
@@ -232,9 +232,8 @@ font-size: 14px;line-height: 150%;
         position: relative;
         display: flex;
         align-items: center;
-        margin-right: 28px;
         &:not(:last-child) {
-            margin-right: 0;
+            margin-right: 28px;
         }
         &:hover,
         &:focus-visible {

@@ -7,7 +7,7 @@
         <use href="./svg/icons.svg#icon-cross"></use>
       </svg>
     </button>
-        <p class="modal__title">Leave your details, we will call you back</p>
+        <p class="modal__title">Order Form</p>
         <form class="modal__form" autocomplete="off">
             <label class="label">
         <span class="label__text">Name</span>
@@ -20,14 +20,12 @@
             autofocus
             required
           />
-          <svg class="label__icon" width="18" height="18">
-            <use href="./svg/icons.svg#icon-person"></use>
-          </svg>
+          <span class="label__icon">Your name</span>
         </span>
       </label>
 
             <label class="label">
-        <span class="label__text">Telephone</span>
+        <span class="label__text">Phone number</span>
         <span class="label__thumb">
           <input
             class="label__input"
@@ -36,14 +34,12 @@
             aria-label="enter yor tel number"
             required
           />
-          <svg class="label__icon" width="18" height="18">
-            <use href="./svg/icons.svg#icon-phone"></use>
-          </svg>
+          <span class="label__icon">+38(0_ _) _ _ _ _ _ _ _</span>
         </span>
       </label>
 
             <label class="label">
-        <span class="label__text">Mail</span>
+        <span class="label__text">E-mail</span>
         <span class="label__thumb">
           <input
             class="label__input"
@@ -52,51 +48,12 @@
             aria-label="enter your email"
             required
           />
-          <svg class="label__icon" width="18" height="18">
-            <use href="./svg/icons.svg#icon-email"></use>
-          </svg>
+          <span class="label__icon">example@gmail.com</span>
         </span>
       </label>
 
-            <label class="label">
-        <span class="label__text">Comment</span>
-        <span class="label__thumb">
-          <textarea
-            class="label__input label__input--textarea"
-            name="user-comment"
-            placeholder=" "
-          ></textarea>
-          <span class="label__placeholder">Enter text</span>
-        </span>
-      </label>
-
-            <label class="checkbox">
-        <input
-          class="checkbox__browser"
-          name="user-policy"
-          type="checkbox"
-          aria-label="policy agreement"
-          required
-        />
-
-        <span class="checkbox__custom">
-          <svg width="16" height="15">
-            <use href="./svg/icons.svg#icon-check"></use>
-          </svg>
-        </span>
-        <span class="checkbox__text"
-          >I agree with the newsletter and accept
-          <a
-            class="checkbox__link"
-            href=""
-            target="_blank"
-            aria-label="user policy"
-            >Privacy Policy</a
-          >
-        </span>
-      </label>
             <button class="modal__btn-submit" type="submit" aria-label="send data">
-        <span>Submit</span>
+        <span>Send</span>
       </button>
         </form>
     </div>
