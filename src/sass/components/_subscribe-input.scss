@@ -17,16 +17,25 @@
         border: 1px solid var(--yellow-color);
         border-radius: 30px;
 
+        transition: border-color var(--animation);
+
     }
 
-    &__field:not(:placeholder-shown), 
-        &__field:focus
+    &__field:invalid:not(:placeholder-shown) 
      {
         border-color: var(--red-color-error);
+        outline: transparent;
     }
 
-    &__field:required:valid:not(:placeholder-shown) {
+         &__field:focus,
+         &__field:hover {
+             border-color: var(--dark-green-color);
+             outline: transparent;
+         }
+
+    &__field:required:valid {
         border-color: var(--dark-green-color);
+        background: var(--white-color);
 
     }
         @media screen and (min-width: 768px) {
@@ -37,6 +46,43 @@
                     width: 394px;
                 }
         }
-    
+        .field--footer {
+            @media screen and (min-width: 768px) {
+            width: 294px;
+            }
+        }
       
 }
+
+.subscribe-form__group {
+    position: relative;
+}
+
+.subscribe-form__message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.8);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--red-color-error);
+
+    transition: opacity var(--animation), transform var(--animation);
+
+    @media screen and (min-width: 1280px) {
+            top: calc(100% - 16px);
+    }
+}
+.subscribe-form__icon {
+    fill: var(--red-color-error);
+}
+
+.subscribe-form__field:invalid:required:not(:placeholder-shown)~.subscribe-form__message {
+    opacity: 1;
+    transform: scale(1);
+}
+

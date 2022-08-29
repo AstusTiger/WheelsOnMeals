@@ -1,96 +1,28 @@
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
 .header {
-    display: flex;
-    align-items: center;
-}
-
-.header__logo {
-    margin: 10px 0;
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #fefefe;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
 .header__item {
-    @extend %container;
-    width: 100%;
-    width: 100%;
-    height: 72px;
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: space-between;
-    /*  @media screen and (min-width: $tablet) {
-        position: relative;
-        width: 100%;
-        height: 72px;
+    @media screen and (min-width: 768px) {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-decoration: none;
-    }*/
-}
-
-
-/*.header__btn {
-    height: 32px;
-    padding: 0 28px;
-    background-color: var(--light-green-color);
-    border-radius: 30px;
-
-
-color: var(--black-color);
-font-weight: 400;
-font-size: 14px;line-height: 150%;
-@include transition(box-shadow);
-&:hover,
-&:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-
-
-}
-*/
-
-.header__button {
-    @extend %container;
-    @extend %button;
-    @include centered-flex($type: inline-flex);
-    width: 100px;
-    height: 32px;
-    margin: 0;
-    border: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(21 / 14);
-    background: var(--light-green-color);
-    border-radius: 30px;
-    // cursor: pointer;
-    @media screen and (max-width: $mobile) {
-        opacity: 0;
+        gap: 191px;
     }
-    &:hover,
-    &:focus {
-        background: var(--green-color-hover);
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 735px;
     }
+}
+
+.header__logo {
+    padding: 10 0 10 0;
 }
 
 .burger-menu {
-    @media screen and (max-width: $mobile) {
-        position: fixed;
-        z-index: 1;
+    @media screen and (max-width: 767px) {
+        overflow-x: hidden;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -98,34 +30,32 @@ font-size: 14px;line-height: 150%;
         width: 130px;
         height: 255px;
         text-decoration: none;
-        // position: absolute;
-        // height: 255px;
-        left: 100%;
+        position: absolute;
+        right: 0;
         top: 50px;
-        /* White */
-        background-color: #ac9a9a;
-        /* Meny shadow */
+        background-color: #fefefe;
         box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
         border-radius: 30px 0px 30px 30px;
-        transform: translateX(0);
+        transform: translateX(-100%);
         @include transition((transform, opacity));
         &.is-open {
+            z-index: 1;
             opacity: 1;
-            transform: translateX(-100%);
+            transform: translateX(0);
             overflow-y: scroll;
         }
     }
-    @media screen and (min-width: $tablet) {
-        width: 100%;
-        margin-left: auto;
+    @media screen and (min-width: 768px) {
         display: flex;
+        align-items: center;
         flex-direction: row;
-        justify-content: flex-end;
+        gap: 30px;
     }
 }
 
 .burger-menu__btn {
-    position: absolute;
+    width: 28px;
+    height: 28px;
     top: 12px;
     right: 23px;
     z-index: 10;
@@ -133,113 +63,117 @@ font-size: 14px;line-height: 150%;
     background-color: transparent;
     border: none;
     margin: 0;
-    padding: 10px;
+    margin-left: auto;
+    padding: 0;
     cursor: pointer;
-    @include transition(color);
-    & .icon-cross {
-        opacity: 0;
-        transform: translateX(-100%);
-        @include transition((opacity, transform));
-    }
-    &.is-open .icon-cross {
-        opacity: 1;
-        transform: translateX(0);
-        @include transition((opacity, transform));
-    }
-    &.is-open .icon-menu {
-        opacity: 0;
-        transform: translateX(100%);
-        @include transition((opacity, transform));
-    }
-    .icon-menu {
-        opacity: 1;
-        transform: translateX(0);
-        @include transition((opacity, transform));
-    }
     &:hover,
     &:focus-visible {
         color: var(--light-green-color);
     }
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header__nav-cross {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 7;
+    top: 11;
+    border: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
 .burger-menu__btn-icon {
     fill: currentColor;
-}
-
-.nav {
-    @media screen and (min-width: $tablet) {
-        // width: 100%;
-        margin-left: auto;
+    &:active {
+        fill: #ffe550;
     }
 }
 
-.nav__list {
-    @extend %list;
-    @media screen and (min-width: $mobile) {
-        //position: absolute;
+.header__nav-list {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
         display: flex;
-        //flex-wrap: nowrap;
-        // align-content: center;
-        justify-content: center;
-        //align-items: center;
-        flex-direction: column;
-        //text-align: center;
-        width: 130px;
-        height: 255px;
-        padding-left: 16px;
-        right: 0;
-        top: 50px;
-        opacity: 1;
-        //transform: translateY(0) translateX(0);
-        /* White */
-        background-color: #fefefe;
-        /* Meny shadow */
-        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-        border-radius: 30px 0px 30px 30px;
-        & :first-child {
-            border-radius: 30px 0px 0px 0px;
-        }
-        & :last-child {
-            border-radius: 0px 0px 30px 30px;
+        flex-direction: row;
+        gap: 28px;
+    }
+}
+
+.header__nav-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    &:hover,
+    &:focus {
+        color: #bbf330;
+    }
+    @media screen and (min-width: 768px) {
+        transition: color var(--animation);
+        &:hover,
+        &:focus {
+            transition: color var(--animation);
         }
     }
-    @media screen and (min-width: $tablet) {
-        display: flex;
-    }
 }
 
-.nav__item {
-    @media screen and (min-width: $mobile) {
-        // position: relative;
-        display: flex;
-        //align-items: center;
-        //text-align: center;
-        //flex-direction: row;
-        padding: 16px 10px 16px 16px;
-        gap: 10px;
-        // position: absolute;
-        width: 100%;
-        height: 51px;
-        // left: 0px;
-        //top: 0px;
-        /* Button green */
-        background-color: transparent;
-    }
-    @media screen and (min-width: $tablet) {
-        position: relative;
+.header__link {
+    @media screen and (max-width: 767px) {
         display: flex;
         align-items: center;
-        &:not(:last-child) {
-            margin-right: 28px;
-        }
+        padding-left: 16px;
+        width: 130px;
+        height: 51px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        transition: background-color var(--animation);
         &:hover,
-        &:focus-visible {
-            background-color: var(--light-green-color);
-            text-decoration: underline;
-            // font-weight: 500;
+        &:focus {
+            background: #bbf330;
+            transition: background-color var(--animation);
+            color: #000000;
         }
     }
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.header__link--current {
+    @media screen and (min-width: 768px) {
+        color: #bbf330;
+        text-decoration-line: underline;
+    }
+}
+
+.header__button {
+    width: 98px;
+    height: 32px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    background: #bbf330;
+    border: none;
+    border-radius: 30px;
+    &:hover,
+    &:focus {
+        background: #b5ff00;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.close-cross {
+    display: none;
 }

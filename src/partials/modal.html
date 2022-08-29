@@ -12,49 +12,46 @@
             <label class="label">
         <span class="label__text">Name</span>
         <span class="label__thumb">
-          <input
-            class="label__input"
-            name="user-name"
-            type="text"
-            aria-label="enter user name"
-            autofocus
-            required
-          />
-          <span class="label__icon">Your name</span>
-        </span>
-      </label>
-
+          <input class="label__input" name="user-name" type="text" minlength="3" maxlength="25"
+            aria-label="enter user name" autofocus required placeholder="Your name" autocomplete="off" />
+          <label class="label">
+            <div class="order__form-message">
+              <svg class="order__form-icon" width="12" height="12">
+                <use href="/src/images/sprite.svg#icon-warning"></use>
+                <span class="order__form-warning">The name must be between 3 and 25 characters</span>
+              </svg>
+            </div>
+          </label>
             <label class="label">
-        <span class="label__text">Phone number</span>
-        <span class="label__thumb">
-          <input
-            class="label__input"
-            name="user-tel"
-            type="tel"
-            aria-label="enter yor tel number"
-            required
-          />
-          <span class="label__icon">+38(0_ _) _ _ _ _ _ _ _</span>
-        </span>
-      </label>
-
+            <span class="label__text">Phone number</span>
+            <span class="label__thumb">
+              <input class="label__input" name="phone_number" type="tel" aria-label="enter yor tel number" required
+                pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                autocomplete="off" />
+              <div class="order__form-message">
+                <svg class="order__form-icon" width="12" height="12">
+                  <use href="/src/images/sprite.svg#icon-warning"></use>
+                  <span class="order__form-warning"> This phone must be in the format 099 000 00 00</span>
+                </svg>
+              </div>
+            </span>
+          </label>
             <label class="label">
-        <span class="label__text">E-mail</span>
-        <span class="label__thumb">
-          <input
-            class="label__input"
-            name="user-email"
-            type="email"
-            aria-label="enter your email"
-            required
-          />
-          <span class="label__icon">example@gmail.com</span>
-        </span>
-      </label>
-
+            <span class="label__text">E-mail</span>
+            <span class="label__thumb">
+              <input class="label__input" name="user-email" type="email" aria-label="enter your email" required
+                placeholder="example@gmail.com" autocomplete="off" />
+              <div class="order__form-message">
+                <svg class="order__form-icon" width="12" height="12">
+                  <use href="/src/images/sprite.svg#icon-warning"></use>
+                  <span class="order__form-warning">Please enter a valid email address</span>
+                </svg>
+              </div>
+            </span>
+          </label>
             <button class="modal__btn-submit" type="submit" aria-label="send data">
-        <span>Send</span>
-      </button>
+            <span>Send</span>
+          </button>
         </form>
     </div>
 </div>

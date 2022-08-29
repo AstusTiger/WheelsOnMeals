@@ -1,60 +1,49 @@
 .modal {
+    width: 320px;
+    height: 449px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scale(1);
     padding: 32px 20px;
-    width: 100%;
-    height: 449px;
-    top: 60px;
-    background: #ffe550;
-    /* Arrow shadow */
+    background: var(--yellow-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 30px;
     @include transition(transform);
-    .backdrop.is-hidden & {
-        transform: translate(100%, -100%) scale(0);
+    @media screen and (max-width: 767px) {
+        top: 78px;
     }
-    @media screen and (max-width: $tablet) {
+    @media screen and (min-width: 768px) {
         top: 98px;
-        padding: 32px;
-        width: calc(100% - 32px * 2);
-    }
-    @media screen and (min-width: $mobile) and (max-width: 1279px) {
         width: 458px;
         height: 449px;
+        padding: 32px;
     }
     @media screen and (min-width: $desktop) {
-        top: 45%;
-        left: 50%;
+        top: 350px;
         transform: translate(-50%, -50%) scale(1);
         width: 458px;
         height: 449px;
-        .backdrop.is-hidden & {
-            transform: translate(100%, -100%) scale(0);
-        }
     }
 }
 
 .modal__btn-close {
     position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     @include centered-flex();
-    top: 20px;
-    right: 20px;
+    top: 12px;
+    right: 12px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     padding: 0;
     cursor: pointer;
-    background-color: var(--primary-bgr-color);
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border: none;
-    /* Arrow shadow */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     @include transition(color);
     fill: currentColor;
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: var(--dark-green-color);
     }
 }
 
@@ -62,11 +51,8 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    /* identical to box height, or 29px */
-    /* Black */
-    color: #2c2c2c;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     @media screen and (max-width: 479px) {
         font-size: 17px;
     }
@@ -75,27 +61,21 @@
 .modal__form {
     display: flex;
     flex-direction: column;
-    &:not(:last-child) {
-        margin-right: 24px;
-    }
 }
 
 .label {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    margin-bottom: 6px;
 }
 
 .label__text {
-    margin-left: 12px;
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    /* or 22px */
-    /* Black */
     color: var(--third-text-color);
-    color: #2c2c2c;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
+    margin-left: 12px;
 }
 
 .label__thumb {
@@ -105,57 +85,89 @@
 .label__input {
     width: 100%;
     height: 48px;
-    background-color: #ffffff;
-    /* Dark green */
-    border: 1px solid #7eb101;
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 30px;
-    padding: 12px 16px 12px 42px;
-    outline: none;
-    @include transition(border-color);
-    .label__thumb:hover &,
-    .label__thumb:focus-within & {
-        border-color: var(--accent-color);
-    }
-}
-
-.label__icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-    color: #c4c4c4;
-    transform: translateY(-50%);
-    @include transition(fill);
-    .label__thumb:hover &,
-    .label__thumb:focus-within & {
-        fill: var(--accent-color);
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 14px 0 14px 12px;
+    outline: none;
+    &:invalid:not(:placeholder-shown) {
+        border-color: var(--red-color-error);
+        outline: transparent;
     }
+    &:focus,
+    &:hover {
+        border-color: var(--dark-green-color);
+        outline: transparent;
+    }
+    &:required:valid {
+        border-color: var(--dark-green-color);
+    }
+    &:invalid:required:not(:placeholder-shown)~.order__form-message {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.label__input--textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    @media screen and (max-width: 479px) {
+        height: 100px;
+    }
+}
+
+.order__form-message {
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    margin-left: 12px;
+    transform: scale(0.8);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: var(--red-color-error);
+    transition: opacity var(--animation), transform var(--animation);
+}
+
+.order__form-warning {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    color: var(--red-color-error);
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 140%;
+    }
+}
+
+.order__form-icon {
+    fill: var(--red-color-error);
 }
 
 .modal__btn-submit {
     @extend %button;
     width: 106px;
     height: 40px;
-    background: #ffffff;
-    /* Dark green */
-    border: 2px solid #7eb101;
+    background-color: var(--white-color);
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: 2px solid var(--dark-green-color);
     border-radius: 30px;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: calc(20 / 13);
-    /* identical to box height, or 20px */
-    /* Black */
-    color: #2c2c2c;
-    color: var(--second-text-color);
-    // padding: 10px 56px;
-    margin: 8 auto;
+    margin: 0 auto;
     @include transition(box-shadow);
     &:hover,
     &:focus {
-        background-color: #bbf330;
+        border: 2px solid var(--super-dark-green);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    &:invalid {
+        border: 2px solid var(--red-color-error);
     }
 }
