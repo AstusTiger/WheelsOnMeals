@@ -36,6 +36,7 @@
     justify-content: center;
     gap: 30px;
     transition: var(--animation);
+    
 
 
 }
@@ -122,7 +123,12 @@
 }
 
 .photo__img{
+
     transition: var(--animation);
+    @media screen and (min-width: 1280px) {
+            cursor: pointer;
+        }
+    
 }
 .photo__img:nth-child(n+4) {
     display: none;
@@ -130,4 +136,5 @@
     @media screen and (min-width: 768px) {
         display: unset;
     }
+       
 }
