@@ -17,6 +17,8 @@
             // (min-resolution: 2dppx) {
             //     background-image: url(/src/images/feedback/backgr@2x_mob480.png);
             // }
+                        width: 100%;
+                        background-size: 100% 67%;
     }
 
     @media screen and (min-width: 768px) {
@@ -29,7 +31,6 @@
             // }
     }
            @media screen and (min-width: 1280px) {
-            width: 100%;
                 max-width: 1920px;
                 background-size: 100% 69%;
                background-image: url(/src/images/feedback/backgr@1x_desk.png);
@@ -196,7 +197,7 @@
 
     @media screen and(min-width: 1280px) {
         padding-top: 100px;
-        padding-bottom: 134px;
+        padding-bottom: 60px;
 
         &__feedback-list {
                 gap: 139px;
