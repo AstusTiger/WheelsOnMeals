@@ -110,22 +110,18 @@
   &:required:valid {
     border-color: var(--dark-green-color);
   }
-  &:invalid:required:not(:placeholder-shown) ~ .order__form-message {
+  &:invalid:required:not(:placeholder-shown) ~ .order__form-warning {
+    opacity: 1;
+    transform: scale(1);
+  }
+  &:invalid:required:not(:placeholder-shown) ~ .order__form-icon {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.label__input--textarea {
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
-  @media screen and (max-width: 479px) {
-    height: 100px;
-  }
-}
-
-.order__form-message {
+.order__form-warning,
+.order__form-icon {
   top: 100%;
   left: 0;
   opacity: 0;
@@ -138,9 +134,7 @@
   line-height: 150%;
   color: var(--red-color-error);
   transition: opacity var(--animation), transform var(--animation);
-}
 
-.order__form-warning {
   font-weight: 500;
   font-size: 11px;
   line-height: 15px;
