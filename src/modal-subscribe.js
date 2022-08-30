@@ -1,16 +1,20 @@
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[data-modalsub-open]"),
-//     closeModalBtn: document.querySelector("[data-modalsub-close]"),
-//     modal: document.querySelector("[data-modalsub]"),
-//   };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modalsub-open]"),
+    
 
-//   refs.openModalBtn.addEventListener("click", toggleModal);
-//   refs.closeModalBtn.addEventListener("click", toggleModal);
+    closeModalBtn: document.querySelector("[data-modalsub-close]"),
+    modal: document.querySelector("[data-modalsub]"),
+  };
 
-//     function toggleModal() {
-//     refs.modal.classList.toggle("sub-is-hidden");
-//   }
-// })();
+  refs.openModalBtn.addEventListener("click", toggleModal);
+ 
+
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    function toggleModal() {
+    refs.modal.classList.toggle("sub-is-hidden");
+  }
+})();
 
 
