@@ -1,109 +1,100 @@
-
 .subscribe-form {
-    position: relative;
-    &__field{
-        display: block;
-        padding: 12px 11px;
-        margin-bottom: 20px;
-        
+  position: relative;
+  &__field {
+    display: block;
+    padding: 12px 11px;
+    margin-bottom: 20px;
 
-        width: 100%;
+    width: 100%;
 
-        font-family: inherit;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.5;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
 
-        color: var(--black-color);
+    color: var(--black-color);
 
-        border: 1px solid var(--yellow-color);
-        border-radius: 30px;
+    border: 1px solid var(--yellow-color);
+    border-radius: 30px;
 
-        transition: border-color var(--animation);
+    transition: border-color var(--animation);
+  }
 
+  &__field:invalid:not(:placeholder-shown):required {
+    border-color: var(--red-color-error);
+    outline: transparent;
+  }
+
+  &__field:focus,
+  &__field:hover {
+    border-color: var(--dark-green-color);
+    outline: transparent;
+  }
+
+  &__field:required:valid {
+    border-color: var(--dark-green-color);
+    background: var(--white-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // gap: 22px;
+
+    &__field {
+      width: 394px;
+      @media screen and (min-width: 768px) {
+        margin-right: 18px;
+      }
     }
-
-    &__field:invalid:not(:placeholder-shown):required 
-     {
-        border-color: var(--red-color-error);
-        outline: transparent;
+  }
+  .field--footer {
+    @media screen and (min-width: 768px) {
+      width: 294px;
     }
-
-         &__field:focus,
-         &__field:hover {
-             border-color: var(--dark-green-color);
-             outline: transparent;
-         }
-
-    &__field:required:valid {
-        border-color: var(--dark-green-color);
-        background: var(--white-color);
-
-    }
-        @media screen and (min-width: 768px) {
-            display: flex;
-           // gap: 22px;
-
-        &__field {
-                    width: 394px;
-                    @media screen and (min-width: 768px) {
-                        margin-right: 18px;
-                    
-                        }
-                    
-                }
-        }
-        .field--footer {
-            @media screen and (min-width: 768px) {
-            width: 294px;
-        
-            }
-        }
-      
+  }
 }
 
 .subscribe-form__group {
-    position: relative;
+  position: relative;
 }
 
 .subscribe-form__icon {
-    position: absolute;
+  position: absolute;
 
-    top: 50px;
-    left: 0;
+  top: 50px;
+  left: 0;
 
-    opacity: 0;
-    fill: var(--red-color-error);
-    @media screen and (min-width: 768px) {
-            top: calc(100% - 15px);
-    }
+  opacity: 0;
+  fill: var(--red-color-error);
+  @media screen and (min-width: 768px) {
+    top: calc(100% - 15px);
+  }
 }
 
-.subscribe-form__notification{
+.subscribe-form__notification {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  opacity: 0;
 
-    display: inline-block;
-    position: absolute;
-    top: 50px;
-    left: 16px;
-    opacity: 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--red-color-error);
 
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.5;
-    color: var(--red-color-error);
-
-    transform: scale(0.8);
-    transition: opacity var(--animation), transform var(--animation);
-    @media screen and (min-width: 768px) {
-            top: calc(100% - 15px);
-        }
+  transform: scale(0.8);
+  transition: opacity var(--animation), transform var(--animation);
+  @media screen and (min-width: 768px) {
+    top: calc(100% - 15px);
+  }
 }
 
-.subscribe-form__field:invalid:required:not(:placeholder-shown)~.subscribe-form__icon, 
-.subscribe-form__field:invalid:required:not(:placeholder-shown)~.subscribe-form__notification{
-    opacity: 1;
-    transform: scale(1);
+.subscribe-form__field:invalid:required:not(:placeholder-shown)
+  ~ .subscribe-form__icon,
+.subscribe-form__field:invalid:required:not(:placeholder-shown)
+  ~ .subscribe-form__notification {
+  opacity: 1;
+  transform: scale(1);
+  margin-left: 12px;
 }
-
-
