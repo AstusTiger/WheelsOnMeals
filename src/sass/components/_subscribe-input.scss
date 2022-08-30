@@ -63,21 +63,21 @@
 .subscribe-form__icon {
     position: absolute;
 
-    top: 4px;
+    top: -15px;
     left: 20px;
 
     opacity: 0;
     fill: var(--red-color-error);
-    @media screen and (min-width: 768px) {
-            top: calc(100% - 15px);
-    }
+    // @media screen and (min-width: 768px) {
+    //         top: calc(100% - 15px);
+    // }
 }
 
 .subscribe-form__notification{
 
     display: inline-block;
     position: absolute;
-    top: 4px;
+    top: -15px;
     left: 36px;
     opacity: 0;
 
@@ -89,9 +89,9 @@
 
     transform: scale(0.8);
     transition: opacity var(--animation), transform var(--animation);
-    @media screen and (min-width: 768px) {
-            top: calc(100% - 15px);
-        }
+    // @media screen and (min-width: 768px) {
+    //         top: calc(100% - 15px);
+    //     }
 }
 
 .subscribe-form__field:invalid:required:not(:placeholder-shown)~.subscribe-form__icon, 
