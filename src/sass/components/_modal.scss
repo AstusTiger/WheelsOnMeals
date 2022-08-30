@@ -156,6 +156,7 @@
   @extend %button;
   width: 106px;
   height: 40px;
+  color: #2c2c2c;
   background-color: var(--white-color);
   font-weight: 700;
   line-height: 1.88;
@@ -165,6 +166,7 @@
 
   margin: 0 auto;
   @include transition(box-shadow);
+
   &:hover,
   &:focus {
     border: 2px solid var(--super-dark-green);
