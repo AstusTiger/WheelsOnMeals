@@ -54,7 +54,7 @@
           type="image/png"
         />
         <!-- fallback -->
-        <img src="./images/feedback/banan@1x_mob.png" alt="Banan" width="" />
+        <img src="./images/feedback/banan@1x_mob.png" alt="Banan" />
       </picture>
 
       <div class="subscribe-section__wrapper-text">
@@ -77,7 +77,7 @@
               required
             />
             <!-- Модальное окно -->
-            <div class="backdrop-sub sub-is-hidden" data-modalsub>
+            <!-- <div class="backdrop-sub sub-is-hidden" data-modalsub>
               <div class="modal-sub">
                 <button
                   type="button"
@@ -93,17 +93,16 @@
                   We sent you an email with our special offers
                 </p>
               </div>
-            </div>
+            </div> -->
+
             <!-- Закончилось модальное окно -->
 
-            <div class="subscribe-form__message">
-              <svg class="subscribe-form__icon" width="12" height="12">
-                <use href="/src/images/sprite.svg#icon-warning"></use>
-              </svg>
-              <span class="ubscribe-form__warning"
-                >Not a valid email address (example@email.com)</span
-              >
-            </div>
+            <svg class="subscribe-form__icon" width="12" height="12">
+              <use href="/src/images/sprite.svg#icon-warning"></use>
+            </svg>
+            <span class="subscribe-form__notification"
+              >Not a valid email address (example@email.com)</span
+            >
           </label>
           <button
             class="subscribe-form__btn btn--green"
