@@ -1,9 +1,11 @@
 
 .subscribe-form {
+    position: relative;
     &__field{
         display: block;
         padding: 12px 11px;
         margin-bottom: 20px;
+        
 
         width: 100%;
 
@@ -60,8 +62,10 @@
 
 .subscribe-form__icon {
     position: absolute;
-    top: calc(100% + 4px);
-        left: 0;
+
+    top: 4px;
+    left: 20px;
+
     opacity: 0;
     fill: var(--red-color-error);
     @media screen and (min-width: 768px) {
@@ -73,8 +77,8 @@
 
     display: inline-block;
     position: absolute;
-    top: calc(100% + 4px);
-    left: 16px;
+    top: 4px;
+    left: 36px;
     opacity: 0;
 
     font-family: 'Roboto';

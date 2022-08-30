@@ -66,16 +66,22 @@
           varius enim in eros elementum tristique.
         </p>
 
-        <form name="subscribe-form" class="subscribe-form" id="subscribe-form">
-          <label class="subscribe-form__group">
+        <form name="subscribe-form" class="subscribe-form" id="subscribe-form-1">
+          <label for="input-1" class="subscribe-form__group"> </label>
             <input
+              id="input-1"
               class="subscribe-form__field"
               name="subscribe-email"
               type="email"
               placeholder="Enter your email"
               autocomplete="on"
-              required
-            />
+              required/>
+              <svg class="subscribe-form__icon" width="12" height="12">
+                <use href="/src/images/sprite.svg#icon-warning"></use>
+              </svg>
+              <span class="subscribe-form__notification"
+                >Not a valid email address (example@email.com)</span
+              >
             <!-- Модальное окно -->
             <!-- <div class="backdrop-sub sub-is-hidden" data-modalsub>
               <div class="modal-sub">
@@ -97,18 +103,11 @@
 
             <!-- Закончилось модальное окно -->
 
-            <svg class="subscribe-form__icon" width="12" height="12">
-              <use href="/src/images/sprite.svg#icon-warning"></use>
-            </svg>
-            <span class="subscribe-form__notification"
-              >Not a valid email address (example@email.com)</span
-            >
-          </label>
+           
+          
           <button
             class="subscribe-form__btn btn--green"
-            type="submit"
-            data-modalsub-open
-          >
+            type="submit">
             Subscribe
           </button>
         </form>
