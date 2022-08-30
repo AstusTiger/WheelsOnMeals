@@ -24,18 +24,22 @@
 }
 
 .yellow-bkg {
+  // width: 100%;
   background-image: url('../images/special-offer/offer_bg_mobile_x1-mobile-480px.png');
+  background-size: 166% 73%;
   background-repeat: no-repeat;
   background-position: bottom;
 
   @media screen and (min-width: 768px) {
+    // width: 100%;
     background-image: url('../images/special-offer/offer_bg_tablet_x1.png');
+    background-size: 100% 77%;
     background-repeat: no-repeat;
     background-position: bottom;
   }
   @media screen and (min-width: 1280px) {
-    width: 100%;
-    max-width: 1920px;
+    // width: 100%;
+    // max-width: 1920px;
     background-size: 100% 66%;
     background-image: url('../images/special-offer/offer_bg_desktop_x1.png');
     background-repeat: no-repeat;
