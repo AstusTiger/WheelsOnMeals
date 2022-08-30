@@ -7,9 +7,7 @@
     //         }
         background-repeat: no-repeat;
         background-position: 50% 0;
-                 width: 100%;
-                 max-width: 1920px;
-                 background-size: 100% 69%;
+                
 
     @media screen and (min-width: 321px) {
         background-image: url(/src/images/feedback/backgr@1x_mob480.png);
@@ -31,6 +29,9 @@
             // }
     }
            @media screen and (min-width: 1280px) {
+            width: 100%;
+                max-width: 1920px;
+                background-size: 100% 69%;
                background-image: url(/src/images/feedback/backgr@1x_desk.png);
     
             //    @media (min-device-pixel-ratio: 2),
@@ -38,6 +39,7 @@
             //    (min-resolution: 2dppx) {
             //        background-image: url(/src/images/feedback/backgr@2x_desk.png);
             //    }
+            
            }
         }
 
