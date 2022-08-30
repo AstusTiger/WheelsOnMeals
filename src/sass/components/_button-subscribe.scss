@@ -1,45 +1,48 @@
 .subscribe-form__btn {
-    display: block;
-    padding: 11px 22px;
+  display: block;
+  padding: 11px 22px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
 
-    color: var(--black-color);
+  color: var(--black-color);
 
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .btn--green {
-    border: none;
-    background-color: var(--light-green-color);
-    margin-left: auto;
-    transition: background-color var(--animation);
+  border: none;
+  background-color: var(--light-green-color);
+  margin-left: auto;
+  transition: background-color var(--animation);
 
-    &:hover,
-    &:focus {
-        background-color: var(--light-green-hover);
-    }
-    @media screen and (min-width: 768px) {
-        margin-left: 0;
-        height: 42px;
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--light-green-hover);
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    height: 42px;
+  }
 }
 
 .btn--border {
-    border: 1px solid var(--dark-green-color);
-    background-color: var(--white-color);
-    margin-left: auto;
-    &:hover,
-    &:focus {
-          background-color: var(--yellow-color);
-      }
-    @media screen and (min-width: 768px) {
-            height: 42px;
-            margin-left: 0;
-        }
+  border: 1px solid var(--dark-green-color);
+  background-color: var(--white-color);
+  margin-left: auto;
+  transition: background-color var(--animation);
+  &:hover,
+  &:focus {
+    transition: background-color var(--animation);
+    background-color: var(--yellow-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 42px;
+    margin-left: 0;
+  }
 }
