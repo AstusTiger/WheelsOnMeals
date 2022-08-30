@@ -79,9 +79,11 @@
   margin-left: auto;
   padding: 0;
   cursor: pointer;
+  transition: color var(--animation);
 
   &:hover,
   &:focus-visible {
+    transition: color var(--animation);
     color: var(--light-green-color);
   }
   @media screen and (min-width: 768px) {
