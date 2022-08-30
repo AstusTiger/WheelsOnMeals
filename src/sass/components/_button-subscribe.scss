@@ -34,6 +34,10 @@
     border: 1px solid var(--dark-green-color);
     background-color: var(--white-color);
     margin-left: auto;
+    &:hover,
+    &:focus {
+          background-color: var(--yellow-color);
+      }
     @media screen and (min-width: 768px) {
             height: 42px;
             margin-left: 0;
