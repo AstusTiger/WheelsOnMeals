@@ -1,4 +1,18 @@
 
+.food-photo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    
+    
+    
+    @media screen and (min-width: 768px) {
+    
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+        }
+}
 .photo__container {
 
     display: flex;
@@ -6,18 +20,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
    
-   
-
-    @media screen and (min-width: 768px) {
-
-        padding-top: 120px;
-        padding-bottom: 120px;
-        
-    }
 
     @media screen and (min-width: 1280px) {}
 
@@ -108,9 +111,19 @@
 
 .food__photo:hover,
 .food__photo:focus {
-    border: 16px solid var(--light-green-color);
+    border: 11px solid var(--light-green-color);
+
+    @media screen and (min-width: 768px){
+        border: 14px solid var(--light-green-color);
+    }
+         @media screen and (min-width: 1280px){
+        border: 16px solid var(--light-green-color);
+         }
 }
 
+.photo__img{
+    transition: var(--animation);
+}
 .photo__img:nth-child(n+4) {
     display: none;
 
