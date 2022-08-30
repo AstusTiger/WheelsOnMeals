@@ -1,15 +1,13 @@
 // hero styles Pavlo Radchenko
 
 .hero {
-  padding-top: 132px;
+  margin-top: 72px;
+  padding-top: 60px;
   padding-bottom: 60px;
 
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 132px;
-  // }
-
   @media screen and (min-width: 1280px) {
-    padding-top: 86px;
+    margin-top: 72px;
+    padding-top: 14px;
     padding-bottom: 0;
   }
 }
