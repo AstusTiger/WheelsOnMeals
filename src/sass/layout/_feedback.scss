@@ -7,6 +7,9 @@
     //         }
         background-repeat: no-repeat;
         background-position: 50% 0;
+                 width: 100%;
+                 max-width: 1920px;
+                 background-size: 100% 69%;
 
     @media screen and (min-width: 321px) {
         background-image: url(/src/images/feedback/backgr@1x_mob480.png);
