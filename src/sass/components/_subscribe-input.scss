@@ -42,15 +42,21 @@
     }
         @media screen and (min-width: 768px) {
             display: flex;
-            gap: 22px;
+           // gap: 22px;
 
         &__field {
                     width: 394px;
+                    @media screen and (min-width: 768px) {
+                        margin-right: 18px;
+                    
+                        }
+                    
                 }
         }
         .field--footer {
             @media screen and (min-width: 768px) {
             width: 294px;
+        
             }
         }
       

@@ -1,4 +1,4 @@
-<footer class="footer-overlay">
+<footer class="footer-overlay" id=“Contact”>
   <div class="footer">
     <div class="container">
       <!--Footer logo-->
@@ -20,25 +20,25 @@
                   >
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__link" href="./index.html" aria-label="about"
+                  <a class="header__link" href="#About" aria-label="about"
                     >About</a
                   >
                 </li>
                 <li class="header__nav-item">
                   <a
                     class="header__link"
-                    href="./index.html"
+                    href="#Service"
                     aria-label="service"
                     >Service</a
                   >
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__link" href="./index.html" aria-label="menu"
+                  <a class="header__link" href="#Menu" aria-label="menu"
                     >Menu</a
                   >
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__link" href="#contacts" aria-label="contact"
+                  <a class="header__link" href="#Contact" aria-label="contact"
                     >Contact</a
                   >
                 </li>
@@ -49,49 +49,48 @@
         <!--Footer subscribe-->
         <div class="subscribe-container">
           <p class="subscribe">Subscribe</p>
-          <form
-            name="subscribe-form"
-            class="subscribe-form"
-            id="subscribe-form"
-          >
-            <label class="subscribe-form__group">
+          <form name="subscribe-form" class="subscribe-form" id="subscribe-form-1">
+            <label for="input-1" class="subscribe-form__group"> </label>
               <input
+                id="input-1"
                 class="subscribe-form__field field--footer"
                 name="subscribe-email"
                 type="email"
                 placeholder="Enter your email"
                 autocomplete="on"
-                required
-              />
+                required/>
+                <svg class="subscribe-form__icon" width="12" height="12">
+                  <use href="/src/images/sprite.svg#icon-warning"></use>
+                </svg>
+                <span class="subscribe-form__notification"
+                  >Not a valid email address (example@email.com)</span
+                >
               <!-- Модальное окно -->
-              <div class="backdrop-sub sub-is-hidden" data-modalsub>
+              <!-- <div class="backdrop-sub sub-is-hidden" data-modalsub>
                 <div class="modal-sub">
                   <button
                     type="button"
                     class="modal-sub-close-btn"
                     data-modalsub-close
                   >
-                    x
-                    <!-- <svg class="modal-icon" width="30" height="30">
-    <use href="/src/images/sprite.svg#icon-warning"></use>
-  </svg> -->
+                    <svg class="modal-sub__icon-cross" width="11" height="11">
+                      <use href="./svg/icons.svg#icon-cross"></use>
+                    </svg>
                   </button>
-                  <h2 class="modal-form-title">Thanks for subscribing!</h2>
-                  <p>We sent you an email with our special offers</p>
+                  <h2 class="modal-sub__title">Thanks for subscribing!</h2>
+                  <p class="modal-sub__text">
+                    We sent you an email with our special offers
+                  </p>
                 </div>
-              </div>
+              </div> -->
+  
               <!-- Закончилось модальное окно -->
-
-              <div class="subscribe-form__message">
-                
-                <span class="subscribe-form__warning">Not a valid email address (example@email.com)</span>
-              </div>
-            </label>
+  
+             
+            
             <button
               class="subscribe-form__btn btn btn--border"
-              type="submit"
-              data-modalsub-open
-            >
+              type="submit">
               Subscribe
             </button>
           </form>
