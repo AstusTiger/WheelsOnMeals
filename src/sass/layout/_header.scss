@@ -179,10 +179,12 @@
   background: #bbf330;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background: #b5ff00;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 767px) {

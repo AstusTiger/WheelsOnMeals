@@ -5,9 +5,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 480px) {
-    padding-bottom: 100;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding-bottom: 100;
+  // }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 100;
@@ -38,6 +38,9 @@
     background-position: bottom;
   }
   @media screen and (min-width: 1280px) {
+    width: 100%;
+    max-width: 1920px;
+    background-size: 100% 66%;
     background-image: url('../images/special-offer/offer_bg_desktop_x1.png');
     background-repeat: no-repeat;
     background-position: bottom;
