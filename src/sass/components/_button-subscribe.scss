@@ -34,6 +34,7 @@
     border: 1px solid var(--dark-green-color);
     background-color: var(--white-color);
     margin-left: auto;
+    transition: background-color var(--animation);
     &:hover,
     &:focus {
           background-color: var(--yellow-color);

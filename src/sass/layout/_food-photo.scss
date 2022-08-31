@@ -92,6 +92,7 @@
     border: 11px solid var(--yellow-color);
     border-radius: 139.658px;
     padding: 29px;
+    transition: border-color var(--animation);
 
     @media screen and (min-width: 768px) {
         width: 336px;
@@ -112,13 +113,13 @@
 
 .food__photo:hover,
 .food__photo:focus {
-    border: 11px solid var(--light-green-color);
+    border-color: var(--light-green-color);
 
     @media screen and (min-width: 768px){
-        border: 14px solid var(--light-green-color);
+        border-color: var(--light-green-color);
     }
          @media screen and (min-width: 1280px){
-        border: 16px solid var(--light-green-color);
+        border-color: var(--light-green-color);
          }
 }
 
